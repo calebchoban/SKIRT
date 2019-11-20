@@ -12,12 +12,14 @@ compile: SKIRT
 build-SKIRT:
 	echo "Need to set this up"
 
-SKIRT: $(SKIRT_GIT_DIR) 
-	build-SKIRT
+SKIRT: $(SKIRT_GIT_DIR)
+	echo "Need to set this up"
 
+# This downloads and compiles SKIRT
 $(SKIRT_GIT_DIR):
 	git clone $(SKIRT_GIT_SRC) $@
-	cd $@ && chmod +rx configSKIRT.sh && chmod +rx makeSKIRT.sh && ./makeSKIRT.sh
+	./compile_tscc.sh $@
+	cd $@ && ./downloadResources.sh
 
 .PHONY: run-SKIRT
 run-SKIRT:
@@ -25,5 +27,4 @@ run-SKIRT:
 
 .PHONY: purge
 purge:
-	rm ic/{*.bin,*.txt,snapshot}
 	rm -r git/ release/
