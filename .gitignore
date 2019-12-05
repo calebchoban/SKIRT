@@ -2,3 +2,5 @@ git/
 release/
 resources/
 scripts/
+*.png
+*.hdf5

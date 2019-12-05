@@ -8,9 +8,9 @@ SKIRT_RELEASE_DIR = release
 .PHONY: compile
 compile: SKIRT 
 
-.PHONY: build-SKIRT
-build-SKIRT:
-	echo "Need to set this up"
+.PHONY: build
+build:
+	source ./module-reset.sh && skirt
 
 SKIRT: $(SKIRT_GIT_DIR)
 	echo "Need to set this up"
@@ -27,4 +27,4 @@ run-SKIRT:
 
 .PHONY: purge
 purge:
-	rm -r git/ release/
+	rm -r git/ release/ resources/
