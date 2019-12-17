@@ -1,9 +1,8 @@
 SKIRT_GIT_SRC ?= https://github.com/SKIRT/SKIRT9.git
-MPIRUN ?= mpirun
-RESTART_FLAG ?=
 
 SKIRT_GIT_DIR = git
 SKIRT_RELEASE_DIR = release
+OUTPUT_DIR = output
 
 .PHONY: compile
 compile: SKIRT 
@@ -12,18 +11,20 @@ compile: SKIRT
 build:
 	source ./module-reset.sh && skirt
 
-SKIRT: $(SKIRT_GIT_DIR)
-	echo "Need to set this up"
-
-# This downloads and compiles SKIRT
+# Downloads and compiles SKIRT
 $(SKIRT_GIT_DIR):
 	git clone $(SKIRT_GIT_SRC) $@
 	./compile_tscc.sh $@
 	cd $@ && ./downloadResources.sh
 
-.PHONY: run-SKIRT
-run-SKIRT:
-	echo "Need to set this up"
+# Compiles data from snapshot
+.PHONY: compile_data
+compile_data:
+	python run.py
+
+.PHONY: submit
+submit:
+	qsub job.pbs
 
 .PHONY: purge
 purge:

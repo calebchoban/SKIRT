@@ -16,5 +16,7 @@ old_AHF = False
 includeVels = True
 # Do the snapshots include dust?
 importDust = True
+# What kind of dust composition do you want to use? (MW, SMC)
+dustType = 'SMC'
 
-make_files(sdir, odir, snum, id=id, DTM=1., includeVels=True, importDust=True)
+make_files(sdir, odir, snum, id=id, dusttype='SMC', DTM=1., includeVels=True, importDust=True)

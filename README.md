@@ -19,10 +19,17 @@ make build
 
 Some preset SKIRT builds for FIRE snapshots are already provided in the sample folder. Sample_MW.ski is for MW like dust species, and Sample_SMC.ski is for SMC like dust species.
 
-Edit the parameters in run.py to get data from the snapshot you want and what data you want to include. Then process your snapshot by running
+Edit the parameters in run.py to get data from the snapshot you want and what data you want to include. Then process your snapshot using
 ```console
-python run.py
+make compile_data
 ```
+
+Last, submit your SKIRT job using
+```console
+make submit
+```
+
+After SKIRT is finished running, all outputs can be found in the output directory.
 
 
 

@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#PBS -q condo
+#PBS -N SKIRT
+#PBS -l nodes=8:ppn=8:ib
+#PBS -l walltime=02:00:00
+#PBS -o out.o
+#PBS -e out.e
+#PBS -d .
+#PBS -M cchoban@ucsd.edu
+#PBS -m ae
+set -e
+pwd
+date
+source ./module-reset.sh
+cd output
+pwd
+mpirun -n 8 skirt -t 4 -m -v out.ski
