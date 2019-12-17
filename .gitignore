@@ -2,5 +2,7 @@ git/
 release/
 resources/
 scripts/
+output/
 *.png
 *.hdf5
+out.ski

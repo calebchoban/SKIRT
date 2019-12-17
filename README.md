@@ -17,7 +17,12 @@ Second, if you want to set up your own parameters for SKIRT build SKIRT using
 make build
 ```
 
-Some preset SKIRT builds for FIRE snapshots are already provided in the sample folder. Sample_MW.ski is for MW like dust species, and sample_SMC.ski is for SMC like dust species.
+Some preset SKIRT builds for FIRE snapshots are already provided in the sample folder. Sample_MW.ski is for MW like dust species, and Sample_SMC.ski is for SMC like dust species.
+
+Edit the parameters in run.py to get data from the snapshot you want and what data you want to include. Then process your snapshot by running
+```console
+python run.py
+```
 
 
 
