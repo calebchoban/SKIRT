@@ -74,31 +74,31 @@
                     <FileWavelengthGrid filename="wave.dat" relativeHalfWidth="0"/>
                 </defaultWavelengthGrid>
                 <instruments type="Instrument">
-                    <SEDInstrument instrumentName="i00" distance="10 Mpc" inclination="0 deg" azimuth="0 deg" roll="0 deg" recordComponents="true" numScatteringLevels="0" recordPolarization="false" recordStatistics="true">
+                    <FullInstrument instrumentName="i00" distance="10 Mpc" inclination="0 deg" azimuth="0 deg" roll="0 deg" fieldOfViewX="66723.65 pc" numPixelsX="668" centerX="0 pc" fieldOfViewY="66723.65 pc" numPixelsY="668" centerY="0 pc" recordComponents="true" numScatteringLevels="0" recordPolarization="false" recordStatistics="false">
                         <wavelengthGrid type="WavelengthGrid">
                             <FileWavelengthGrid filename="wave.dat" relativeHalfWidth="0"/>
                         </wavelengthGrid>
-                    </SEDInstrument>
-                    <SEDInstrument instrumentName="i01" distance="10 Mpc" inclination="60 deg" azimuth="0 deg" roll="0 deg" recordComponents="true" numScatteringLevels="0" recordPolarization="false" recordStatistics="true">
+                    </FullInstrument>
+                    <FullInstrument instrumentName="i01" distance="10 Mpc" inclination="60 deg" azimuth="0 deg" roll="0 deg" fieldOfViewX="66723.65 pc" numPixelsX="668" centerX="0 pc" fieldOfViewY="66723.65 pc" numPixelsY="668" centerY="0 pc" recordComponents="true" numScatteringLevels="0" recordPolarization="false" recordStatistics="false">
                         <wavelengthGrid type="WavelengthGrid">
                             <FileWavelengthGrid filename="wave.dat" relativeHalfWidth="0"/>
                         </wavelengthGrid>
-                    </SEDInstrument>
-                    <SEDInstrument instrumentName="i02" distance="10 Mpc" inclination="90 deg" azimuth="0 deg" roll="0 deg" recordComponents="true" numScatteringLevels="0" recordPolarization="false" recordStatistics="true">
+                    </FullInstrument>
+                    <FullInstrument instrumentName="i02" distance="10 Mpc" inclination="90 deg" azimuth="0 deg" roll="0 deg" fieldOfViewX="66723.65 pc" numPixelsX="668" centerX="0 pc" fieldOfViewY="66723.65 pc" numPixelsY="668" centerY="0 pc" recordComponents="true" numScatteringLevels="0" recordPolarization="false" recordStatistics="false">
                         <wavelengthGrid type="WavelengthGrid">
                             <FileWavelengthGrid filename="wave.dat" relativeHalfWidth="0"/>
                         </wavelengthGrid>
-                    </SEDInstrument>
-                    <SEDInstrument instrumentName="i03" distance="10 Mpc" inclination="120 deg" azimuth="0 deg" roll="0 deg" recordComponents="true" numScatteringLevels="0" recordPolarization="false" recordStatistics="true">
+                    </FullInstrument>
+                    <FullInstrument instrumentName="i03" distance="10 Mpc" inclination="120 deg" azimuth="0 deg" roll="0 deg" fieldOfViewX="66723.65 pc" numPixelsX="668" centerX="0 pc" fieldOfViewY="66723.65 pc" numPixelsY="668" centerY="0 pc" recordComponents="true" numScatteringLevels="0" recordPolarization="false" recordStatistics="false">
                         <wavelengthGrid type="WavelengthGrid">
                             <FileWavelengthGrid filename="wave.dat" relativeHalfWidth="0"/>
                         </wavelengthGrid>
-                    </SEDInstrument>
-                    <SEDInstrument instrumentName="i04" distance="10 Mpc" inclination="180 deg" azimuth="0 deg" roll="0 deg" recordComponents="true" numScatteringLevels="0" recordPolarization="false" recordStatistics="true">
+                    </FullInstrument>
+                    <FullInstrument instrumentName="i04" distance="10 Mpc" inclination="180 deg" azimuth="0 deg" roll="0 deg" fieldOfViewX="66723.65 pc" numPixelsX="668" centerX="0 pc" fieldOfViewY="66723.65 pc" numPixelsY="668" centerY="0 pc" recordComponents="true" numScatteringLevels="0" recordPolarization="false" recordStatistics="false">
                         <wavelengthGrid type="WavelengthGrid">
                             <FileWavelengthGrid filename="wave.dat" relativeHalfWidth="0"/>
                         </wavelengthGrid>
-                    </SEDInstrument>
+                    </FullInstrument>
                 </instruments>
             </InstrumentSystem>
         </instrumentSystem>

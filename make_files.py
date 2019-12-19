@@ -67,7 +67,7 @@ def write_param_file(fname, dusttype='MW', includeCMB=False, includeVels=True, i
     root = tree.getroot()
 
     # set the CMB
-    # TODO: Check how to add CMB to ski file
+    # TODO: Check how to add CMB to ski file (looks like they have yet to add this feature, check the github repo)
     """
     eleStellar = root[0][3][0][0]
     eleCMB = eleStellar[1]

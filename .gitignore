@@ -1,9 +1,11 @@
 git/
 release/
 resources/
-scripts/
+test/
 output/
 *.png
 *.hdf5
 *.pyc
+*.o
+*.e
 out.ski
