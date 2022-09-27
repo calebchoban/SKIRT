@@ -3,14 +3,15 @@ import numpy as np
 import xml.etree.ElementTree as ET
 import copy
 import os
-from gizmo import *
+from crc_scripts.gizmo import *
+
 from gadget_lib.load_stellar_hsml import get_particle_hsml
 
 # write particle file
-def write_particle_file(sdir, snum, odir, id=0, cosmological=1, includeVels=True, importDust=True):
-    sp = loadsnap(sdir, snum, cosmological=cosmological)
+def write_particle_file(sdir, snum, odir, id=-1, cosmological=1, includeVels=True, importDust=True, hdir=None, seperateDust=False):
+    sp = load_snap(sdir, snum, cosmological=cosmological)
 
-    hl = sp.loadhalo(id=id)
+    hl = sp.loadhalo(id=id,hdir=hdir)
     xc, yc, zc, rvir = hl.xc, hl.yc, hl.zc, hl.rvir
     
     p4 = sp.loadpart(4)
@@ -18,7 +19,7 @@ def write_particle_file(sdir, snum, odir, id=0, cosmological=1, includeVels=True
     vx, vy, vz = p4.v[:,0], p4.v[:,1], p4.v[:,2]
     h = get_particle_hsml(x, y, z)
     r = np.sqrt(x**2+y**2+z**2)
-    m, Z, t = 1e10*p4.m, p4.z, 1e9*p4.age
+    m, Z, t = 1e10*p4.m, p4.z[:,0], 1e9*p4.age
 
     f = open(odir+"/star.dat", 'w')
     j, = np.where(r<rvir)
@@ -83,8 +84,9 @@ def write_param_file(fname, dusttype='MW', includeCMB=False, includeVels=True, i
     """
 
     # set whether velocity if imported
-    eleStellar = root[0][2][0][0][0]
-    eleGas = root[0][3][0][3][0]
+    eleStellar = root[0][3][0][0][0]
+    eleGas = root[0][4][0][5][0]
+
     if not includeVels:
         eleStellar.set('importVelocity', 'false')
         eleGas.set('importVelocity', 'false')
@@ -94,24 +96,23 @@ def write_param_file(fname, dusttype='MW', includeCMB=False, includeVels=True, i
         eleGas.set('massFraction', "%.2f"%DTM)
 
     # set octree
-    eleOctree = root[0][3][0][4][0]
+    eleOctree = root[0][4][0][7][0]
     eleOctree.set('minX', "-%.2f pc"%gridsize)
     eleOctree.set('maxX', "%.2f pc"%gridsize)
     eleOctree.set('minY', "-%.2f pc"%gridsize)
     eleOctree.set('maxY', "%.2f pc"%gridsize)
     eleOctree.set('minZ', "-%.2f pc"%gridsize)
     eleOctree.set('maxZ', "%.2f pc"%gridsize)
-
     tree.write(fname, encoding='UTF-8', xml_declaration=True)
 
     return
 
-def make_files(sdir, odir, snum, id=0, dusttype='MW', DTM=1, includeCMB=False, includeVels=True, importDust=True):
+def make_files(sdir, odir, snum, id=-1, dusttype='MW', DTM=1, includeCMB=False, includeVels=True, importDust=True, cosmological=True, hdir=None):
 
     # read snapshot
-    sp = loadsnap(sdir, snum, cosmological=1)
+    sp = load_snap(sdir, snum, cosmological=1)
     if sp.k==-1: return # no snapshot
-    hl = sp.loadhalo(id=id)
+    hl = sp.loadhalo(id=id, hdir=hdir)
 
     # create directory
     if not os.path.exists(odir): os.system("mkdir -p %s"%odir)
@@ -122,6 +123,6 @@ def make_files(sdir, odir, snum, id=0, dusttype='MW', DTM=1, includeCMB=False, i
     os.system("cp wave.dat %s"%odir)
 
     # write particle file
-    write_particle_file(sdir, snum, odir, id=id, includeVels=includeVels, importDust=importDust)
+    write_particle_file(sdir, snum, odir, id=id, includeVels=includeVels, importDust=importDust, hdir=hdir)
 
     return

@@ -9,3 +9,4 @@ output/
 *.o
 *.e
 out.ski
+.idea/

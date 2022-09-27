@@ -5,7 +5,7 @@ SKIRT_RELEASE_DIR = release
 OUTPUT_DIR = output
 
 .PHONY: compile
-compile: SKIRT 
+compile: $(SKIRT_GIT_DIR) 
 
 .PHONY: build
 build:

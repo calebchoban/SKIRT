@@ -1,7 +1,9 @@
 source ./module-reset.sh
 cd $1
+# Make scripts executable
 chmod +rx configSKIRT.sh 
 chmod +rx makeSKIRT.sh 
+
 CPATH=$(which gcc)
 CPPPATH=$(which g++)
 # Need to manually give SKIRT config the compiler paths since TSCC has issues getting the correct ones
