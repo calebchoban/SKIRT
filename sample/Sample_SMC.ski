@@ -6,7 +6,7 @@
             <Random seed="0"/>
         </random>
         <units type="Units">
-            <ExtragalacticUnits wavelengthOutputStyle="Wavelength" fluxOutputStyle="Wavelength"/>
+            <ExtragalacticUnits wavelengthOutputStyle="Wavelength" fluxOutputStyle="Neutral"/>
         </units>
         <cosmology type="Cosmology">
             <FlatUniverseCosmology redshift="0" reducedHubbleConstant="0.675" matterDensityFraction="0.31"/>

@@ -27,12 +27,16 @@ Now you need to prepare the data from FIRE snaps to be used by SKIRT. Edit the p
 make compile_data
 ```
 
+Before submitting the SKIRT job to the queue edit job.pbs to make sure you are using the correct number of processes and threads. It's recommended that you use 4-8 threads per process. Also add your email if you want email updates.
+
 Last, submit your SKIRT job using
 ```console
 make submit
 ```
 
 After SKIRT is finished running, all outputs can be found in the output directory.
+
+Note that for the default TSCC setup provided this takes <1 hour for m12i at z=0.
 
 
 

@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 #PBS -q condo
 #PBS -N SKIRT
-#PBS -l nodes=1:ppn=2:ib
+#PBS -l nodes=1:ppn=36:ib
 #PBS -l walltime=02:00:00
 #PBS -o out.o
 #PBS -e out.e
 #PBS -d .
-#PBS -M cchoban@ucsd.edu
+#PBS -M USER_EMAIL
 #PBS -m ae
 set -e
 pwd
@@ -14,6 +14,7 @@ date
 source ./module-reset.sh
 cd output
 pwd
-mpirun -n 2 skirt -t 16 -m -v out.ski
+# Run with 6 nodes with 6 threads per node. 
+mpirun -np 6 skirt -t 6 -m -v out.ski
 date
 exit
