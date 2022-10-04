@@ -12,7 +12,7 @@
             <FlatUniverseCosmology redshift="0" reducedHubbleConstant="0.675" matterDensityFraction="0.31"/>
         </cosmology>
         <sourceSystem type="SourceSystem">
-            <SourceSystem minWavelength="0.09 micron" maxWavelength="1000 micron" wavelengths="0.55 micron" sourceBias="0.5">
+            <SourceSystem minWavelength="0.08 micron" maxWavelength="1000 micron" wavelengths="0.55 micron" sourceBias="0.5">
                 <sources type="Source">
                     <ParticleSource filename="star.dat" importVelocity="true" importVelocityDispersion="false" importCurrentMass="false" useColumns="" sourceWeight="1" wavelengthBias="0.5">
                         <smoothingKernel type="SmoothingKernel">
@@ -36,7 +36,7 @@
                 <radiationFieldOptions type="RadiationFieldOptions">
                     <RadiationFieldOptions storeRadiationField="true">
                         <radiationFieldWLG type="DisjointWavelengthGrid">
-                            <LogWavelengthGrid minWavelength="0.0001 micron" maxWavelength="1e6 micron" numWavelengths="100"/>
+                            <LogWavelengthGrid minWavelength="0.08 micron" maxWavelength="1000 micron" numWavelengths="90"/>
                         </radiationFieldWLG>
                     </RadiationFieldOptions>
                 </radiationFieldOptions>
@@ -52,7 +52,7 @@
                             <AllCellsLibrary/>
                         </cellLibrary>
                         <dustEmissionWLG type="DisjointWavelengthGrid">
-                            <LogWavelengthGrid minWavelength="0.0001 micron" maxWavelength="1e6 micron" numWavelengths="100"/>
+                            <LogWavelengthGrid minWavelength="0.08 micron" maxWavelength="1000 micron" numWavelengths="90"/>
                         </dustEmissionWLG>
                         <wavelengthBiasDistribution type="WavelengthDistribution">
                             <LogWavelengthDistribution minWavelength="1e-6 micron" maxWavelength="1e6 micron"/>
