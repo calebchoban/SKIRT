@@ -42,7 +42,7 @@ skirt
 ```
 This will step you through creating a .ski file with user specified dust properties. Tutorials can be found [here](https://skirt.ugent.be/version9/_tutorials.html). Fair warning, this Q&A process can be long.
 
-A preset SKIRT build for FIRE snapshots is provided in the sample folder, labelled Sample\_MW.ski. This .ski is set such that the star and gas data are provided as star.dat and gas.dat, it uses a Milky-Way dust population from Weingartner & Draine (2001), and has 3 camera instruments (at 0, 45, and 90 degrees) which produce spectral data cubes.
+A preset SKIRT build for FIRE snapshots is provided in the sample folder, labelled basic\_MW.ski. This .ski is set such that the star and gas data are provided as star.dat and gas.dat, it uses a Milky-Way dust population from Weingartner & Draine (2001), and has 3 camera instruments (at 0, 45, and 90 degrees) which produce spectral data cubes.
 
 You can also edit .ski files directly if you know what you are doing. If you have minor changes to make this is faster than using the Q&A process. Tutorials can be found [here](https://skirt.ugent.be/version9/_tutorial_custom_dust.html).
 
