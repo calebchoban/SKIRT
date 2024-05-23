@@ -28,3 +28,8 @@ submit:
 .PHONY: purge
 purge:
 	rm -r git/ release/ resources/
+
+.PHONY: pts
+pts:
+	mkdir PTS
+	cd PTS && mkdir run pts && git clone https://github.com/SKIRT/PTS9.git pts

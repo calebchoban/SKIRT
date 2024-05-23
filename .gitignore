@@ -10,3 +10,5 @@ output/
 *.e
 out.ski
 .idea/
+PTS/
+run/
