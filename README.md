@@ -52,9 +52,9 @@ To run SKIRT you will first want to have star.dat, gas.dat, and the .ski file yo
 ```console
 qsub job.sh
 ```
-This will make a new output folder and all the SKIRT output will be saved there. 2) You can run SKIRT in an interactive session. This is useful when you want to debug things and don't want to wait for each job to get through the SLURM queue. To submit an interactive job that has the same resources as the job.sh script run
+This will make a new output folder and all the SKIRT output will be saved there. 2) You can run SKIRT in an interactive session. This is useful when you want to debug things and don't want to wait for each job to get through the SLURM queue. To submit an interactive job that has the same resources as the job.sh script run and a 1 hr time limit
 ```console
-salloc -p general -A r00380 --nodes=1 --ntasks-per-node=4 --cpus-per-task=8 --mem=50G
+salloc -p general -A r00380 --nodes=1 --ntasks-per-node=4 --cpus-per-task=8 --mem=50G -t 1:00:00
 ```
 Once this is running, you can run the same lines of codes as in job.sh.
 
