@@ -46,7 +46,7 @@ A preset SKIRT build for FIRE snapshots is provided in the sample folder, labell
 
 You can also edit .ski files directly if you know what you are doing. If you have minor changes to make this is faster than using the Q&A process. Tutorials can be found [here](https://skirt.ugent.be/version9/_tutorial_custom_dust.html).
 
-To prepare the data from FIRE snaps to be used by SKIRT, use the reduce_sim_data.py script in the scripts folder. Note this script uses functions from my [crc_scripts](https://github.com/calebchoban/crc_scripts/) repository, so you will need to install that first.
+To prepare the data from FIRE snaps to be used by SKIRT, use the data_reduction Jupyter notebook in the ntbk/ directory. Note this script uses functions from my [crc_scripts](https://github.com/calebchoban/crc_scripts/) repository, so you will need to install that first.
 
 To run SKIRT you will first want to have star.dat, gas.dat, and the .ski file you want to use in the same folder (names out.ski in the below example). You now have two options to run SKIRT on Big Red 200. 1) Use the submission script job.sh. Copy this into the same folder as the other files, replace EMAIL in job.sh with your email, and then run
 ```console
