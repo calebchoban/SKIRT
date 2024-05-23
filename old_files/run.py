@@ -1,4 +1,4 @@
-from make_files import *
+from old_files.make_files import *
 
 # Directory of snapshot
 sdir = './scripts'
