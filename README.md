@@ -8,6 +8,11 @@ make compile
 ```
 This will take a while. At the end it will ask you about downloading SKIRT resources, say yes to only SKIRT9\_Resources\_Core for now. It's usually all you ever need.
 
+If there is an issue with the install, before rerunning the above command run the purge command before retrying again
+```console
+make purge
+```
+
 To confirm the installation is successful run
 ```console
 skirt
@@ -22,10 +27,7 @@ This should output
 ```
 Then use [CTRL] + C to exit the program.
 
-If there is an issue with the install clean up the directory first before retrying using
-```console
-make purge
-```
+
 
 Now you want to edit your .bash\_rc file so that everytime you login to the supercomputer SKIRT will be ready to use. Add the following lines to your .bash\_rc in your $HOME directory
 ```console

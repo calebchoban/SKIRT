@@ -1,4 +1,4 @@
-source ./module-reset.sh
+source ./activate.sh
 cd $1
 # Make scripts executable
 chmod +rx configSKIRT.sh 
