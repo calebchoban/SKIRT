@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- A SKIRT parameter file © Astronomical Observatory, Ghent University -->
-<skirt-simulation-hierarchy type="MonteCarloSimulation" format="9" producer="SKIRT v9.0 (git 3c9e4d7 built on 17/05/2024 at 15:20:47)" time="2024-05-21T16:55:14.668">
+<skirt-simulation-hierarchy type="MonteCarloSimulation" format="9" producer="SKIRT v9.0 (git 3c9e4d7 built on 23/05/2024 at 17:01:53)" time="2024-05-24T10:40:34.056">
     <MonteCarloSimulation userLevel="Basic" simulationMode="DustEmission" iteratePrimaryEmission="false" iterateSecondaryEmission="false" numPackets="1e6">
         <random type="Random">
             <Random seed="0"/>
@@ -12,7 +12,7 @@
             <LocalUniverseCosmology/>
         </cosmology>
         <sourceSystem type="SourceSystem">
-            <SourceSystem minWavelength="0.09 micron" maxWavelength="1000 micron" wavelengths="0.55 micron" sourceBias="0.5">
+            <SourceSystem minWavelength="0.09 micron" maxWavelength="100 micron" wavelengths="0.55 micron" sourceBias="0.5">
                 <sources type="Source">
                     <ParticleSource filename="star.dat" importVelocity="false" importVelocityDispersion="false" importCurrentMass="false" useColumns="" sourceWeight="1" wavelengthBias="0.5">
                         <smoothingKernel type="SmoothingKernel">
@@ -36,7 +36,7 @@
                 <radiationFieldOptions type="RadiationFieldOptions">
                     <RadiationFieldOptions storeRadiationField="true">
                         <radiationFieldWLG type="DisjointWavelengthGrid">
-                            <LogWavelengthGrid minWavelength="0.09 micron" maxWavelength="1000 micron" numWavelengths="90"/>
+                            <LogWavelengthGrid minWavelength="0.09 micron" maxWavelength="100 micron" numWavelengths="90"/>
                         </radiationFieldWLG>
                     </RadiationFieldOptions>
                 </radiationFieldOptions>
@@ -82,7 +82,7 @@
                 </defaultWavelengthGrid>
                 <instruments type="Instrument">
                     <FullInstrument instrumentName="i00" distance="10 Mpc" inclination="0 deg" azimuth="0 deg" roll="0 deg" fieldOfViewX="6e4 pc" numPixelsX="600" centerX="0 pc" fieldOfViewY="6e4 pc" numPixelsY="600" centerY="0 pc" recordComponents="true" numScatteringLevels="0" recordPolarization="false" recordStatistics="false"/>
-                    <FullInstrument instrumentName="i001" distance="10 Mpc" inclination="45 deg" azimuth="0 deg" roll="0 deg" fieldOfViewX="6e4 pc" numPixelsX="600" centerX="0 pc" fieldOfViewY="6e4 pc" numPixelsY="600" centerY="0 pc" recordComponents="true" numScatteringLevels="0" recordPolarization="false" recordStatistics="false"/>
+                    <FullInstrument instrumentName="i01" distance="10 Mpc" inclination="45 deg" azimuth="0 deg" roll="0 deg" fieldOfViewX="6e4 pc" numPixelsX="600" centerX="0 pc" fieldOfViewY="6e4 pc" numPixelsY="600" centerY="0 pc" recordComponents="true" numScatteringLevels="0" recordPolarization="false" recordStatistics="false"/>
                     <FullInstrument instrumentName="i02" distance="10 Mpc" inclination="90 deg" azimuth="0 deg" roll="0 deg" fieldOfViewX="6e4 pc" numPixelsX="600" centerX="0 pc" fieldOfViewY="6e4 pc" numPixelsY="600" centerY="0 pc" recordComponents="true" numScatteringLevels="0" recordPolarization="false" recordStatistics="false"/>
                 </instruments>
             </InstrumentSystem>

@@ -1,0 +1,274 @@
+(mini) cchoban@login2:~> skirt
+24/05/2024 10:23:13.400   Welcome to SKIRT v9.0 (git 3c9e4d7 built on 23/05/2024 at 17:01:53)
+24/05/2024 10:23:13.400   Running on login2 for cchoban
+24/05/2024 10:23:13.977   Interactively constructing a simulation...
+24/05/2024 10:23:13.977 ? Enter the name of the ski file to be created: test.ski
+24/05/2024 10:23:19.368   Possible choices for a Monte Carlo simulation:
+24/05/2024 10:23:19.368      1. A Monte Carlo simulation
+24/05/2024 10:23:19.368   Automatically selected the only choice: 1
+24/05/2024 10:23:19.368   Possible choices for the user experience level:
+24/05/2024 10:23:19.368      1. Basic: for beginning users (hides many options)
+24/05/2024 10:23:19.368      2. Regular: for regular users (hides esoteric options)
+24/05/2024 10:23:19.368      3. Expert: for expert users (hides no options)
+24/05/2024 10:23:19.368 ? Enter one of these numbers [1,3] (2): 1
+24/05/2024 10:23:24.141   Possible choices for the units system:
+24/05/2024 10:23:24.141      1. SI units
+24/05/2024 10:23:24.141      2. Stellar units (length in AU, distance in pc)
+24/05/2024 10:23:24.141      3. Extragalactic units (length in pc, distance in Mpc)
+24/05/2024 10:23:24.141 ? Enter one of these numbers [1,3] (3): 3
+24/05/2024 10:23:28.223   Possible choices for the output style for wavelengths:
+24/05/2024 10:23:28.223      1. As photon wavelength: λ
+24/05/2024 10:23:28.223      2. As photon frequency: ν
+24/05/2024 10:23:28.223      3. As photon energy: E
+24/05/2024 10:23:28.223 ? Enter one of these numbers [1,3] (1): 1
+24/05/2024 10:23:31.567   Possible choices for the output style for flux density and surface brightness:
+24/05/2024 10:23:31.567      1. Neutral: λ F_λ = ν F_ν
+24/05/2024 10:23:31.567      2. Per unit of wavelength: F_λ
+24/05/2024 10:23:31.567      3. Per unit of frequency: F_ν
+24/05/2024 10:23:31.567      4. Counts per unit of energy: F_E
+24/05/2024 10:23:31.567 ? Enter one of these numbers [1,4] (3): 1
+24/05/2024 10:23:38.516   Possible choices for the overall simulation mode:
+24/05/2024 10:23:38.516      1. No medium - oligochromatic regime (a few discrete wavelengths)
+24/05/2024 10:23:38.516      2. Extinction only - oligochromatic regime (a few discrete wavelengths)
+24/05/2024 10:23:38.516      3. No medium (primary sources only)
+24/05/2024 10:23:38.516      4. Extinction only (no secondary emission)
+24/05/2024 10:23:38.516      5. Extinction only with Lyman-alpha line transfer
+24/05/2024 10:23:38.516      6. With secondary emission from dust
+24/05/2024 10:23:38.516      7. With secondary emission from gas
+24/05/2024 10:23:38.516      8. With secondary emission from dust and gas
+24/05/2024 10:23:38.516 ? Enter one of these numbers [1,8] (4): 6
+24/05/2024 10:28:25.751 ? Enter the default number of photon packets launched per simulation segment [0,1e19] (1e6): 1e6
+24/05/2024 10:29:02.797   Possible choices for the source system:
+24/05/2024 10:29:02.797      1. A primary source system
+24/05/2024 10:29:02.797   Automatically selected the only choice: 1
+24/05/2024 10:29:02.801 ? Enter the shortest wavelength of photon packets launched from primary sources [1e-6 micron,1e6 micron] (0.09 micron): 
+24/05/2024 10:29:17.200 ? Enter the longest wavelength of photon packets launched from primary sources [1e-6 micron,1e6 micron] (100 micron): 
+24/05/2024 10:29:21.600   Possible choices for item #1 in the primary sources list:
+24/05/2024 10:29:21.600      1. A primary point source
+24/05/2024 10:29:21.600      2. A primary source with a built-in geometry
+24/05/2024 10:29:21.600      3. A primary source imported from smoothed particle data
+24/05/2024 10:29:21.600      4. A primary source imported from cuboidal cell data
+24/05/2024 10:29:21.600      5. A primary source imported from data represented on an adaptive mesh (AMR grid)
+24/05/2024 10:29:21.600      6. A primary source imported from data represented on a Voronoi mesh
+24/05/2024 10:29:21.600 ? Enter one of these numbers or zero to terminate the list [0,6] (2): 3
+24/05/2024 10:29:36.741 ? Enter the name of the file to be imported: star.dat
+24/05/2024 10:29:40.283   Possible choices for the SED family for assigning spectra to the imported sources:
+24/05/2024 10:29:40.283      1. A black body SED family
+24/05/2024 10:29:40.283      2. A Castelli-Kurucz SED family for stellar atmospheres
+24/05/2024 10:29:40.283      3. A Bruzual-Charlot SED family for single stellar populations
+24/05/2024 10:29:40.283      4. A Maraston SED family for single stellar populations
+24/05/2024 10:29:40.283      5. A Starburst99 SED family for single stellar populations
+24/05/2024 10:29:40.283      6. An FSPS SED family for single stellar populations
+24/05/2024 10:29:40.283      7. A BPASS SED family for single stellar populations
+24/05/2024 10:29:40.283      8. A user-provided SED family for single stellar populations
+24/05/2024 10:29:40.283      9. A user-provided, indexed SED family
+24/05/2024 10:29:40.283     10. A Toddlers SED family for emission from star-forming regions
+24/05/2024 10:29:40.283     11. A family of Gaussian spectra around the central spin-flip wavelength
+24/05/2024 10:29:40.283 ? Enter one of these numbers [1,11] (1): 5
+24/05/2024 10:30:46.707   Possible choices for item #2 in the primary sources list:
+24/05/2024 10:30:46.707      1. A primary point source
+24/05/2024 10:30:46.707      2. A primary source with a built-in geometry
+24/05/2024 10:30:46.707      3. A primary source imported from smoothed particle data
+24/05/2024 10:30:46.707      4. A primary source imported from cuboidal cell data
+24/05/2024 10:30:46.707      5. A primary source imported from data represented on an adaptive mesh (AMR grid)
+24/05/2024 10:30:46.707      6. A primary source imported from data represented on a Voronoi mesh
+24/05/2024 10:30:46.707 ? Enter one of these numbers or zero to terminate the list [0,6] (2): 0
+24/05/2024 10:31:13.215   Possible choices for the medium system:
+24/05/2024 10:31:13.215      1. A medium system
+24/05/2024 10:31:13.215   Automatically selected the only choice: 1
+24/05/2024 10:31:13.216   Possible choices for the photon packet options:
+24/05/2024 10:31:13.216      1. A set of options related to the photon packet lifecycle
+24/05/2024 10:31:13.216   Automatically selected the only choice: 1
+24/05/2024 10:31:13.216   Possible choices for the radiation field options:
+24/05/2024 10:31:13.216      1. A set of options related to the radiation field
+24/05/2024 10:31:13.216   Automatically selected the only choice: 1
+24/05/2024 10:31:13.217   Possible choices for the wavelength grid for storing the radiation field:
+24/05/2024 10:31:13.217      1. A logarithmic wavelength grid
+24/05/2024 10:31:13.217      2. A nested logarithmic wavelength grid
+24/05/2024 10:31:13.217      3. A linear wavelength grid
+24/05/2024 10:31:13.217      4. A logarithmic wavelength grid with given spectral resolution
+24/05/2024 10:31:13.217      5. A logarithmic wavelength grid with given outer borders
+24/05/2024 10:31:13.217      6. A linear wavelength grid with given outer borders
+24/05/2024 10:31:13.217      7. A logarithmic wavelength grid with given spectral resolution and outer borders
+24/05/2024 10:31:13.217 ? Enter one of these numbers [1,7] (1): 1
+24/05/2024 10:31:19.713 ? Enter the shortest wavelength [1e-6 micron,1e6 micron]: 0.09
+24/05/2024 10:31:25.195 ? Enter the longest wavelength [1e-6 micron,1e6 micron]: 100
+24/05/2024 10:31:30.636 ? Enter the number of wavelength grid points [2,2000000000] (25): 90
+24/05/2024 10:32:08.523   Possible choices for the secondary emission options:
+24/05/2024 10:32:08.523      1. A set of options related to secondary emission
+24/05/2024 10:32:08.523   Automatically selected the only choice: 1
+24/05/2024 10:32:08.524   Possible choices for the dust emission options:
+24/05/2024 10:32:08.524      1. A set of options related to thermal emission from dust
+24/05/2024 10:32:08.524   Automatically selected the only choice: 1
+24/05/2024 10:32:08.524   Possible choices for the wavelength grid for calculating the dust emission spectrum:
+24/05/2024 10:32:08.524      1. A logarithmic wavelength grid
+24/05/2024 10:32:08.524      2. A nested logarithmic wavelength grid
+24/05/2024 10:32:08.524      3. A linear wavelength grid
+24/05/2024 10:32:08.524      4. A logarithmic wavelength grid with given spectral resolution
+24/05/2024 10:32:08.524      5. A logarithmic wavelength grid with given outer borders
+24/05/2024 10:32:08.524      6. A linear wavelength grid with given outer borders
+24/05/2024 10:32:08.524      7. A logarithmic wavelength grid with given spectral resolution and outer borders
+24/05/2024 10:32:08.524 ? Enter one of these numbers [1,7] (1): 1
+24/05/2024 10:32:16.262 ? Enter the shortest wavelength [1e-6 micron,1e6 micron]: 0.09
+24/05/2024 10:32:31.508 ? Enter the longest wavelength [1e-6 micron,1e6 micron]: 1000
+24/05/2024 10:32:32.805 ? Enter the number of wavelength grid points [2,2000000000] (25): 90
+24/05/2024 10:32:36.394   Possible choices for item #1 in the transfer media list:
+24/05/2024 10:32:36.394      1. A transfer medium with a built-in geometry
+24/05/2024 10:32:36.394      2. A transfer medium imported from smoothed particle data
+24/05/2024 10:32:36.394      3. A transfer medium imported from cuboidal cell data
+24/05/2024 10:32:36.394      4. A transfer medium imported from data represented on an adaptive mesh (AMR grid)
+24/05/2024 10:32:36.394      5. A transfer medium imported from data represented on a Voronoi mesh
+24/05/2024 10:32:36.394 ? Enter one of these numbers [1,5] (1): 2
+24/05/2024 10:33:08.436 ? Enter the name of the file to be imported: gas.dat
+24/05/2024 10:33:10.801   Possible choices for the type of mass quantity to be imported:
+24/05/2024 10:33:10.801      1. Mass (volume-integrated)
+24/05/2024 10:33:10.801      2. Number (volume-integrated)
+24/05/2024 10:33:10.801 ? Enter one of these numbers [1,2] (1): 1
+24/05/2024 10:33:35.975 ? Enter the fraction of the mass to be included (or one to include all) [0,1] (1): 
+24/05/2024 10:33:42.382 ? Do you want to import a metallicity column? [yes/no] (no): 
+24/05/2024 10:33:46.223 ? Do you want to import a temperature column? [yes/no] (no): yes
+24/05/2024 10:34:02.132 ? Enter the maximum temperature for included mass (or zero to include all) [0 K,1e6 K] (0 K): 
+24/05/2024 10:34:04.427   Possible choices for the material type and properties throughout the medium:
+24/05/2024 10:34:04.427      1. A typical interstellar dust mix (mean properties)
+24/05/2024 10:34:04.427      2. A THEMIS (Jones et al. 2017) dust mix
+24/05/2024 10:34:04.427      3. A Draine and Li (2007) dust mix
+24/05/2024 10:34:04.427      4. A Zubko et al. (2004) dust mix
+24/05/2024 10:34:04.427      5. A Weingartner and Draine (2001) dust mix
+24/05/2024 10:34:04.427      6. An MRN (1997) dust mix
+24/05/2024 10:34:04.427      7. A population of electrons
+24/05/2024 10:34:04.427      8. A gas mix supporting the spin-flip 21 cm hydrogen absorption
+24/05/2024 10:34:04.427      9. A gas mix supporting the spin-flip 21 cm hydrogen transition
+24/05/2024 10:34:04.427     10. A gas mix supporting photo-absorption and fluorescence for X-ray wavelengths
+24/05/2024 10:34:04.427     11. A gas mix supporting rotational transitions in specific molecules and atoms
+24/05/2024 10:34:04.427 ? Enter one of these numbers [1,11] (1): 5
+24/05/2024 10:35:05.401   Possible choices for the environment determining the dust model:
+24/05/2024 10:35:05.401      1. The Milky Way
+24/05/2024 10:35:05.401      2. The Large Magellanic Cloud
+24/05/2024 10:35:05.401      3. The Small Magellanic Cloud
+24/05/2024 10:35:05.401 ? Enter one of these numbers [1,3] (1): 1
+24/05/2024 10:35:07.784 ? Enter the number of silicate grain size bins [1,2000000000] (5): 
+24/05/2024 10:35:09.371 ? Enter the number of graphite grain size bins [1,2000000000] (5): 
+24/05/2024 10:35:09.923 ? Enter the number of neutral and ionized PAH size bins (each) [1,2000000000] (5): 
+24/05/2024 10:35:11.612   Possible choices for item #2 in the transfer media list:
+24/05/2024 10:35:11.612      1. A transfer medium with a built-in geometry
+24/05/2024 10:35:11.612      2. A transfer medium imported from smoothed particle data
+24/05/2024 10:35:11.612      3. A transfer medium imported from cuboidal cell data
+24/05/2024 10:35:11.612      4. A transfer medium imported from data represented on an adaptive mesh (AMR grid)
+24/05/2024 10:35:11.612      5. A transfer medium imported from data represented on a Voronoi mesh
+24/05/2024 10:35:11.612 ? Enter one of these numbers or zero to terminate the list [0,5] (1): 0
+24/05/2024 10:35:34.156   Possible choices for the spatial grid sampling options:
+24/05/2024 10:35:34.156      1. A set of options related to media sampling for the spatial grid
+24/05/2024 10:35:34.156   Automatically selected the only choice: 1
+24/05/2024 10:35:34.156   Possible choices for the spatial grid:
+24/05/2024 10:35:34.156      1. A Cartesian spatial grid
+24/05/2024 10:35:34.157      2. A tree-based spatial grid
+24/05/2024 10:35:34.157 ? Enter one of these numbers [1,2] (2): 
+24/05/2024 10:35:36.906 ? Enter the start point of the box in the X direction ]-∞ pc,∞ pc[: -5E4
+24/05/2024 10:36:14.624 ? Enter the end point of the box in the X direction ]-∞ pc,∞ pc[: 5E4
+24/05/2024 10:36:19.189 ? Enter the start point of the box in the Y direction ]-∞ pc,∞ pc[: -5E4
+24/05/2024 10:36:22.894 ? Enter the end point of the box in the Y direction ]-∞ pc,∞ pc[: 5E4
+24/05/2024 10:36:25.603 ? Enter the start point of the box in the Z direction ]-∞ pc,∞ pc[: -5E4
+24/05/2024 10:36:28.918 ? Enter the end point of the box in the Z direction ]-∞ pc,∞ pc[: 5E4
+24/05/2024 10:36:30.039   Possible choices for the tree construction policy (configuration options):
+24/05/2024 10:36:30.039      1. A tree grid construction policy using the medium density distribution
+24/05/2024 10:36:30.039   Automatically selected the only choice: 1
+24/05/2024 10:36:30.039 ? Enter the minimum level of grid refinement [0,99] (3): 3
+24/05/2024 10:36:45.064 ? Enter the maximum level of grid refinement [0,99] (7): 15
+24/05/2024 10:36:46.395 ? Enter the maximum fraction of dust contained in each cell [0,0.01] (1e-6): 1E-6
+24/05/2024 10:37:20.343   Possible choices for the instrument system:
+24/05/2024 10:37:20.343      1. An instrument system
+24/05/2024 10:37:20.343   Automatically selected the only choice: 1
+24/05/2024 10:37:20.344   Possible choices for the default instrument wavelength grid:
+24/05/2024 10:37:20.344      1. A logarithmic wavelength grid
+24/05/2024 10:37:20.344      2. A nested logarithmic wavelength grid
+24/05/2024 10:37:20.344      3. A linear wavelength grid
+24/05/2024 10:37:20.344      4. A logarithmic wavelength grid with given spectral resolution
+24/05/2024 10:37:20.344      5. A logarithmic wavelength grid with given outer borders
+24/05/2024 10:37:20.344      6. A linear wavelength grid with given outer borders
+24/05/2024 10:37:20.344      7. A logarithmic wavelength grid with given spectral resolution and outer borders
+24/05/2024 10:37:20.344      8. A wavelength grid including a predefined list of (broad)bands
+24/05/2024 10:37:20.344 ? Enter one of these numbers [1,8] (1): 1
+24/05/2024 10:37:29.424 ? Enter the shortest wavelength [1e-6 micron,1e6 micron]: 0.09
+24/05/2024 10:37:38.089 ? Enter the longest wavelength [1e-6 micron,1e6 micron]: 1000
+24/05/2024 10:37:40.247 ? Enter the number of wavelength grid points [2,2000000000] (25): 80
+24/05/2024 10:37:46.685   Possible choices for item #1 in the instruments list:
+24/05/2024 10:37:46.685      1. A distant instrument that outputs the spatially integrated flux density as an SED
+24/05/2024 10:37:46.685      2. A distant instrument that outputs the surface brightness in every pixel as a data cube
+24/05/2024 10:37:46.685      3. A distant instrument that outputs both the flux density (SED) and surface brightness (data cube)
+24/05/2024 10:37:46.685 ? Enter one of these numbers or zero to terminate the list [0,3] (1): 3
+24/05/2024 10:37:59.896 ? Enter the name for this instrument: i00
+24/05/2024 10:38:02.830 ? Enter the distance to the system [0 Mpc,∞ Mpc[: 10
+24/05/2024 10:38:06.068 ? Enter the inclination angle θ of the detector [0 deg,180 deg] (0 deg): 0
+24/05/2024 10:38:07.868 ? Enter the azimuth angle φ of the detector [-360 deg,360 deg] (0 deg): 0
+24/05/2024 10:38:08.583 ? Enter the total field of view in the horizontal direction ]0 pc,∞ pc[: 6E4
+24/05/2024 10:38:41.874 ? Enter the number of pixels in the horizontal direction [1,10000] (250): 600
+24/05/2024 10:38:44.461 ? Enter the total field of view in the vertical direction ]0 pc,∞ pc[: 6E4
+24/05/2024 10:38:50.527 ? Enter the number of pixels in the vertical direction [1,10000] (250): 600
+24/05/2024 10:38:51.674 ? Do you want to record flux components separately? [yes/no] (no): yes
+24/05/2024 10:38:54.364   Possible choices for item #2 in the instruments list:
+24/05/2024 10:38:54.364      1. A distant instrument that outputs the spatially integrated flux density as an SED
+24/05/2024 10:38:54.364      2. A distant instrument that outputs the surface brightness in every pixel as a data cube
+24/05/2024 10:38:54.364      3. A distant instrument that outputs both the flux density (SED) and surface brightness (data cube)
+24/05/2024 10:38:54.364 ? Enter one of these numbers or zero to terminate the list [0,3] (1): 3
+24/05/2024 10:38:57.972 ? Enter the name for this instrument: i01
+24/05/2024 10:39:00.806 ? Enter the distance to the system [0 Mpc,∞ Mpc[: 10
+24/05/2024 10:39:02.768 ? Enter the inclination angle θ of the detector [0 deg,180 deg] (0 deg): 45
+24/05/2024 10:39:06.169 ? Enter the azimuth angle φ of the detector [-360 deg,360 deg] (0 deg): 0
+24/05/2024 10:39:07.384 ? Enter the total field of view in the horizontal direction ]0 pc,∞ pc[: 6E4
+24/05/2024 10:39:12.122 ? Enter the number of pixels in the horizontal direction [1,10000] (250): 600
+24/05/2024 10:39:13.561 ? Enter the total field of view in the vertical direction ]0 pc,∞ pc[: 6E4
+24/05/2024 10:39:15.474 ? Enter the number of pixels in the vertical direction [1,10000] (250): 600
+24/05/2024 10:39:17.238 ? Do you want to record flux components separately? [yes/no] (no): yes 
+24/05/2024 10:39:19.990   Possible choices for item #3 in the instruments list:
+24/05/2024 10:39:19.990      1. A distant instrument that outputs the spatially integrated flux density as an SED
+24/05/2024 10:39:19.990      2. A distant instrument that outputs the surface brightness in every pixel as a data cube
+24/05/2024 10:39:19.990      3. A distant instrument that outputs both the flux density (SED) and surface brightness (data cube)
+24/05/2024 10:39:19.990 ? Enter one of these numbers or zero to terminate the list [0,3] (1): 3
+24/05/2024 10:39:21.156 ? Enter the name for this instrument: i02
+24/05/2024 10:39:24.534 ? Enter the distance to the system [0 Mpc,∞ Mpc[: 10
+24/05/2024 10:39:26.392 ? Enter the inclination angle θ of the detector [0 deg,180 deg] (0 deg): 90
+24/05/2024 10:39:28.136 ? Enter the azimuth angle φ of the detector [-360 deg,360 deg] (0 deg): 0
+24/05/2024 10:39:29.929 ? Enter the total field of view in the horizontal direction ]0 pc,∞ pc[: 6E4
+24/05/2024 10:39:34.629 ? Enter the number of pixels in the horizontal direction [1,10000] (250): 600
+24/05/2024 10:39:36.678 ? Enter the total field of view in the vertical direction ]0 pc,∞ pc[: 6E4
+24/05/2024 10:39:39.161 ? Enter the number of pixels in the vertical direction [1,10000] (250): 600
+24/05/2024 10:39:40.376 ? Do you want to record flux components separately? [yes/no] (no): yes
+24/05/2024 10:39:41.906   Possible choices for item #4 in the instruments list:
+24/05/2024 10:39:41.906      1. A distant instrument that outputs the spatially integrated flux density as an SED
+24/05/2024 10:39:41.906      2. A distant instrument that outputs the surface brightness in every pixel as a data cube
+24/05/2024 10:39:41.906      3. A distant instrument that outputs both the flux density (SED) and surface brightness (data cube)
+24/05/2024 10:39:41.906 ? Enter one of these numbers or zero to terminate the list [0,3] (1): 0
+24/05/2024 10:39:46.856   Possible choices for the probe system:
+24/05/2024 10:39:46.856      1. A probe system
+24/05/2024 10:39:46.856   Automatically selected the only choice: 1
+24/05/2024 10:39:46.856   Possible choices for item #1 in the probes list:
+24/05/2024 10:39:46.856      1. Convergence: information on the spatial grid
+24/05/2024 10:39:46.856      2. Convergence: cuts of the medium density along the coordinate planes
+24/05/2024 10:39:46.856      3. Source: luminosities of primary sources
+24/05/2024 10:39:46.856      4. Internal spatial grid: density of the medium
+24/05/2024 10:39:46.856      5. Internal spatial grid: opacity of the medium
+24/05/2024 10:39:46.856      6. Internal spatial grid: indicative temperature of the medium
+24/05/2024 10:39:46.856      7. Internal spatial grid: secondary dust luminosity
+24/05/2024 10:39:46.856      8. Properties: basic info for each spatial cell
+24/05/2024 10:39:46.856      9. Properties: data files for plotting the structure of the grid
+24/05/2024 10:39:46.856     10. Properties: aggregate optical material properties for each medium
+24/05/2024 10:39:46.856 ? Enter one of these numbers or zero to terminate the list [0,10] (1): 6
+24/05/2024 10:39:58.895 ? Enter the name for this probe: dust_temp
+24/05/2024 10:40:02.444   Possible choices for the form describing how this quantity should be probed:
+24/05/2024 10:40:02.444      1. Default planar cuts along the coordinate planes
+24/05/2024 10:40:02.444      2. A text column file with values for each spatial cell
+24/05/2024 10:40:02.444 ? Enter one of these numbers [1,2] (1): 1
+24/05/2024 10:40:27.128   Possible choices for item #2 in the probes list:
+24/05/2024 10:40:27.128      1. Convergence: information on the spatial grid
+24/05/2024 10:40:27.128      2. Convergence: cuts of the medium density along the coordinate planes
+24/05/2024 10:40:27.128      3. Source: luminosities of primary sources
+24/05/2024 10:40:27.128      4. Internal spatial grid: density of the medium
+24/05/2024 10:40:27.128      5. Internal spatial grid: opacity of the medium
+24/05/2024 10:40:27.128      6. Internal spatial grid: indicative temperature of the medium
+24/05/2024 10:40:27.128      7. Internal spatial grid: secondary dust luminosity
+24/05/2024 10:40:27.128      8. Properties: basic info for each spatial cell
+24/05/2024 10:40:27.128      9. Properties: data files for plotting the structure of the grid
+24/05/2024 10:40:27.128     10. Properties: aggregate optical material properties for each medium
+24/05/2024 10:40:27.128 ? Enter one of these numbers or zero to terminate the list [0,10] (1): 0
+24/05/2024 10:40:34.092   Successfully created ski file 'test.ski'.
+24/05/2024 10:40:34.092   To run the simulation use the command: skirt test
