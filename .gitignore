@@ -8,6 +8,7 @@ output/
 *.pyc
 *.o
 *.e
+*.dat
 out.ski
 .idea/
 PTS/
