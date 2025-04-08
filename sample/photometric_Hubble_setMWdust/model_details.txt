@@ -1,0 +1,5 @@
+Redshift z=0.
+Extinction only radiative transfer.
+Vornoi spatial grid.
+1 SDSS ugri photometric instrument pointed face-on.
+Assumes Weingartner and Draine MW dust population and utilizes the particle metallicty and assume dust-to-metals ratio of 0.4 for T<10^6 K gas.

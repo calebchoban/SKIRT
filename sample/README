@@ -1,0 +1,6 @@
+This directory houses SKIRT parameter files for various personal use cases.
+
+The names of each folder tells you roughly what kind of instrument they correspond to.
+Each folder contains a .ski SKIRT parameter file, a SKIRT_QA.txt file showing the QA used to create the .ski file, and a model_details.txt file which gives basic details of the SKIRT model.
+
+Note that depending on your version of SKIRT, the .ski files may not longer work, but you can follow the answers in the corresponding QA file to recreate it with your version of SKIRT.

@@ -1,0 +1,579 @@
+(mini) cchoban@login2:~/SKIRT> skirt
+08/04/2025 16:08:57.192   Welcome to SKIRT v9.0 (git c991294 built on 23/07/2024 at 15:25:22)
+08/04/2025 16:08:57.192   Running on login2 for cchoban
+08/04/2025 16:08:57.617   Interactively constructing a simulation...
+08/04/2025 16:08:57.617 ? Enter the name of the ski file to be created: Euclid
+08/04/2025 16:08:58.580   Possible choices for a Monte Carlo simulation:
+08/04/2025 16:08:58.580      1. A Monte Carlo simulation
+08/04/2025 16:08:58.580   Automatically selected the only choice: 1
+08/04/2025 16:08:58.580   Possible choices for the user experience level:
+08/04/2025 16:08:58.580      1. Basic: for beginning users (hides many options)
+08/04/2025 16:08:58.580      2. Regular: for regular users (hides esoteric options)
+08/04/2025 16:08:58.580      3. Expert: for expert users (hides no options)
+08/04/2025 16:08:58.580 ? Enter one of these numbers [1,3] (2): 
+08/04/2025 16:09:01.252   Possible choices for the units system:
+08/04/2025 16:09:01.252      1. SI units
+08/04/2025 16:09:01.252      2. Stellar units (length in AU, distance in pc)
+08/04/2025 16:09:01.252      3. Extragalactic units (length in pc, distance in Mpc)
+08/04/2025 16:09:01.252 ? Enter one of these numbers [1,3] (3): 
+08/04/2025 16:09:02.154   Possible choices for the output style for wavelengths:
+08/04/2025 16:09:02.154      1. As photon wavelength: λ
+08/04/2025 16:09:02.154      2. As photon frequency: ν
+08/04/2025 16:09:02.154      3. As photon energy: E
+08/04/2025 16:09:02.154 ? Enter one of these numbers [1,3] (1): 
+08/04/2025 16:09:02.984   Possible choices for the output style for flux density and surface brightness:
+08/04/2025 16:09:02.984      1. Neutral: λ F_λ = ν F_ν
+08/04/2025 16:09:02.984      2. Per unit of wavelength: F_λ
+08/04/2025 16:09:02.984      3. Per unit of frequency: F_ν
+08/04/2025 16:09:02.984      4. Counts per unit of energy: F_E
+08/04/2025 16:09:02.984 ? Enter one of these numbers [1,4] (3): 1
+08/04/2025 16:09:03.622   Possible choices for the overall simulation mode:
+08/04/2025 16:09:03.622      1. No medium - oligochromatic regime (a few discrete wavelengths)
+08/04/2025 16:09:03.622      2. Extinction only - oligochromatic regime (a few discrete wavelengths)
+08/04/2025 16:09:03.622      3. No medium (primary sources only)
+08/04/2025 16:09:03.622      4. Extinction only (no secondary emission)
+08/04/2025 16:09:03.622      5. Extinction only with Lyman-alpha line transfer
+08/04/2025 16:09:03.622      6. With secondary emission from dust
+08/04/2025 16:09:03.622      7. With secondary emission from gas
+08/04/2025 16:09:03.622      8. With secondary emission from dust and gas
+08/04/2025 16:09:03.622 ? Enter one of these numbers [1,8] (4): 4
+08/04/2025 16:09:55.303 ? Enter the default number of photon packets launched per simulation segment [0,1e19] (1e6): 
+08/04/2025 16:09:57.075   Possible choices for the cosmology parameters:
+08/04/2025 16:09:57.075      1. The model is at redshift zero in the Local Universe
+08/04/2025 16:09:57.075      2. The model is at a given redshift in a flat universe
+08/04/2025 16:09:57.075 ? Enter one of these numbers [1,2] (1): 
+08/04/2025 16:09:58.553   Possible choices for the source system:
+08/04/2025 16:09:58.553      1. A primary source system
+08/04/2025 16:09:58.553   Automatically selected the only choice: 1
+08/04/2025 16:09:58.558 ? Enter the shortest wavelength of photon packets launched from primary sources [1e-6 micron,1e6 micron] (0.09 micron): 
+08/04/2025 16:10:00.923 ? Enter the longest wavelength of photon packets launched from primary sources [1e-6 micron,1e6 micron] (100 micron): 
+08/04/2025 16:10:04.007   Possible choices for item #1 in the primary sources list:
+08/04/2025 16:10:04.007      1. A primary point source
+08/04/2025 16:10:04.007      2. A primary source with a built-in geometry
+08/04/2025 16:10:04.007      3. A primary source imported from smoothed particle data
+08/04/2025 16:10:04.007      4. A primary source imported from cuboidal cell data
+08/04/2025 16:10:04.007      5. A primary source imported from data represented on an adaptive mesh (AMR grid)
+08/04/2025 16:10:04.007      6. A primary source imported from data represented on a Voronoi mesh
+08/04/2025 16:10:04.007      7. A stellar surface source with an anisotropic outward radiation field
+08/04/2025 16:10:04.007      8. A cubical background source with an anisotropic inward radiation field
+08/04/2025 16:10:04.007      9. A spherical background source with an anisotropic inward radiation field
+08/04/2025 16:10:04.007     10. A primary point source with a polarized spectrum read from file
+08/04/2025 16:10:04.007 ? Enter one of these numbers or zero to terminate the list [0,10] (2): 3
+08/04/2025 16:10:08.349 ? Enter the name of the file to be imported: star.dat
+08/04/2025 16:10:11.258   Possible choices for the kernel for interpolating the smoothed particles:
+08/04/2025 16:10:11.258      1. A cubic spline smoothing kernel
+08/04/2025 16:10:11.258      2. A scaled Gaussian smoothing kernel
+08/04/2025 16:10:11.258      3. A uniform smoothing kernel
+08/04/2025 16:10:11.258 ? Enter one of these numbers [1,3] (1): 
+08/04/2025 16:10:13.600 ? Do you want to import velocity components (3 columns)? [yes/no] (no): 
+08/04/2025 16:10:21.470   Possible choices for the SED family for assigning spectra to the imported sources:
+08/04/2025 16:10:21.471      1. A black body SED family
+08/04/2025 16:10:21.471      2. A Castelli-Kurucz SED family for stellar atmospheres
+08/04/2025 16:10:21.471      3. A Bruzual-Charlot SED family for single stellar populations
+08/04/2025 16:10:21.471      4. A Maraston SED family for single stellar populations
+08/04/2025 16:10:21.471      5. A Starburst99 SED family for single stellar populations
+08/04/2025 16:10:21.471      6. An FSPS SED family for single stellar populations
+08/04/2025 16:10:21.471      7. A BPASS SED family for single stellar populations
+08/04/2025 16:10:21.471      8. A user-provided SED family for single stellar populations
+08/04/2025 16:10:21.471      9. A user-provided, indexed SED family
+08/04/2025 16:10:21.471     10. A MAPPINGS III SED family for star-forming regions
+08/04/2025 16:10:21.471     11. A Toddlers SED family for emission from star-forming regions
+08/04/2025 16:10:21.471     12. A family of Gaussian spectra around the central spin-flip wavelength
+08/04/2025 16:10:21.471 ? Enter one of these numbers [1,12] (1): 5
+08/04/2025 16:10:31.084   Possible choices for item #2 in the primary sources list:
+08/04/2025 16:10:31.084      1. A primary point source
+08/04/2025 16:10:31.084      2. A primary source with a built-in geometry
+08/04/2025 16:10:31.084      3. A primary source imported from smoothed particle data
+08/04/2025 16:10:31.084      4. A primary source imported from cuboidal cell data
+08/04/2025 16:10:31.084      5. A primary source imported from data represented on an adaptive mesh (AMR grid)
+08/04/2025 16:10:31.084      6. A primary source imported from data represented on a Voronoi mesh
+08/04/2025 16:10:31.084      7. A stellar surface source with an anisotropic outward radiation field
+08/04/2025 16:10:31.084      8. A cubical background source with an anisotropic inward radiation field
+08/04/2025 16:10:31.084      9. A spherical background source with an anisotropic inward radiation field
+08/04/2025 16:10:31.084     10. A primary point source with a polarized spectrum read from file
+08/04/2025 16:10:31.084 ? Enter one of these numbers or zero to terminate the list [0,10] (2): 0
+08/04/2025 16:10:35.393   Possible choices for the medium system:
+08/04/2025 16:10:35.393      1. A medium system
+08/04/2025 16:10:35.393   Automatically selected the only choice: 1
+08/04/2025 16:10:35.393   Possible choices for the photon packet options:
+08/04/2025 16:10:35.393      1. A set of options related to the photon packet lifecycle
+08/04/2025 16:10:35.393   Automatically selected the only choice: 1
+08/04/2025 16:10:35.394   Possible choices for the radiation field options:
+08/04/2025 16:10:35.394      1. A set of options related to the radiation field
+08/04/2025 16:10:35.394   Automatically selected the only choice: 1
+08/04/2025 16:10:35.394   Possible choices for item #1 in the transfer media list:
+08/04/2025 16:10:35.394      1. A transfer medium with a built-in geometry
+08/04/2025 16:10:35.394      2. A transfer medium imported from smoothed particle data
+08/04/2025 16:10:35.394      3. A transfer medium imported from cuboidal cell data
+08/04/2025 16:10:35.394      4. A transfer medium imported from data represented on an adaptive mesh (AMR grid)
+08/04/2025 16:10:35.394      5. A transfer medium imported from data represented on a Voronoi mesh
+08/04/2025 16:10:35.394 ? Enter one of these numbers [1,5] (1): 2
+08/04/2025 16:11:12.755 ? Enter the name of the file to be imported: gas.dat
+08/04/2025 16:11:15.183   Possible choices for the kernel for interpolating the smoothed particles:
+08/04/2025 16:11:15.183      1. A cubic spline smoothing kernel
+08/04/2025 16:11:15.183      2. A scaled Gaussian smoothing kernel
+08/04/2025 16:11:15.183      3. A uniform smoothing kernel
+08/04/2025 16:11:15.183 ? Enter one of these numbers [1,3] (1): 
+08/04/2025 16:11:17.293   Possible choices for the type of mass quantity to be imported:
+08/04/2025 16:11:17.293      1. Mass (volume-integrated)
+08/04/2025 16:11:17.293      2. Number (volume-integrated)
+08/04/2025 16:11:17.293 ? Enter one of these numbers [1,2] (1): 
+08/04/2025 16:11:18.391 ? Enter the fraction of the mass to be included (or one to include all) [0,1] (1): 0.4
+08/04/2025 16:11:23.631 ? Do you want to import a metallicity column? [yes/no] (no): yes
+08/04/2025 16:11:26.055 ? Do you want to import a temperature column? [yes/no] (no): yes
+08/04/2025 16:11:29.186 ? Enter the maximum temperature for included mass (or zero to include all) [0 K,1e6 K] (0 K): 1e6
+08/04/2025 16:11:32.742 ? Do you want to import velocity components (3 columns)? [yes/no] (no): 
+08/04/2025 16:11:34.513 ? Do you want to import parameter(s) to select a spatially varying material mix? [yes/no] (no): 
+08/04/2025 16:11:36.600   Possible choices for the material type and properties throughout the medium:
+08/04/2025 16:11:36.600      1. A typical interstellar dust mix (mean properties)
+08/04/2025 16:11:36.600      2. A TRUST benchmark dust mix (mean properties, optionally with polarization)
+08/04/2025 16:11:36.600      3. A Pinte 2D benchmark dust mix (mean properties, optionally with polarization at 1 micron)
+08/04/2025 16:11:36.600      4. A Pascucci 2D benchmark dust mix (mean properties)
+08/04/2025 16:11:36.600      5. An Ivezic 1D benchmark dust mix (mean properties)
+08/04/2025 16:11:36.600      6. A dust mix with mean properties loaded from a text file
+08/04/2025 16:11:36.600      7. A dust mix with mean properties specified inside the configuration file
+08/04/2025 16:11:36.600      8. A THEMIS (Jones et al. 2017) dust mix
+08/04/2025 16:11:36.600      9. A Draine and Li (2007) dust mix
+08/04/2025 16:11:36.600     10. A Zubko et al. (2004) dust mix
+08/04/2025 16:11:36.600     11. A Weingartner and Draine (2001) dust mix
+08/04/2025 16:11:36.600     12. An MRN (1997) dust mix
+08/04/2025 16:11:36.600     13. A TRUST benchmark dust mix
+08/04/2025 16:11:36.600     14. A configurable dust mix with one or more grain populations
+08/04/2025 16:11:36.600     15. A dust mix decorator that manages separate densities for fragments of another dust mix
+08/04/2025 16:11:36.600     16. A population of electrons
+08/04/2025 16:11:36.600     17. A gas mix supporting the spin-flip 21 cm hydrogen absorption
+08/04/2025 16:11:36.600     18. A gas mix supporting the spin-flip 21 cm hydrogen transition
+08/04/2025 16:11:36.600     19. A gas mix supporting photo-absorption and fluorescence for X-ray wavelengths
+08/04/2025 16:11:36.600     20. A gas mix supporting rotational transitions in specific molecules and atoms
+08/04/2025 16:11:36.600 ? Enter one of these numbers [1,20] (1): 11
+08/04/2025 16:11:42.038   Possible choices for the environment determining the dust model:
+08/04/2025 16:11:42.038      1. The Milky Way
+08/04/2025 16:11:42.038      2. The Large Magellanic Cloud
+08/04/2025 16:11:42.038      3. The Small Magellanic Cloud
+08/04/2025 16:11:42.038 ? Enter one of these numbers [1,3] (1): 1
+08/04/2025 16:11:42.940 ? Enter the number of silicate grain size bins [1,2000000000] (5): 
+08/04/2025 16:11:44.596 ? Enter the number of graphite grain size bins [1,2000000000] (5): 
+08/04/2025 16:11:45.224 ? Enter the number of neutral and ionized PAH size bins (each) [1,2000000000] (5): 
+08/04/2025 16:11:45.972   Possible choices for item #2 in the transfer media list:
+08/04/2025 16:11:45.973      1. A transfer medium with a built-in geometry
+08/04/2025 16:11:45.973      2. A transfer medium imported from smoothed particle data
+08/04/2025 16:11:45.973      3. A transfer medium imported from cuboidal cell data
+08/04/2025 16:11:45.973      4. A transfer medium imported from data represented on an adaptive mesh (AMR grid)
+08/04/2025 16:11:45.973      5. A transfer medium imported from data represented on a Voronoi mesh
+08/04/2025 16:11:45.973 ? Enter one of these numbers or zero to terminate the list [0,5] (1): 0
+08/04/2025 16:11:50.649   Possible choices for the spatial grid sampling options:
+08/04/2025 16:11:50.649      1. A set of options related to media sampling for the spatial grid
+08/04/2025 16:11:50.649   Automatically selected the only choice: 1
+08/04/2025 16:11:50.649 ? Enter the number of random density samples for determining spatial cell mass [1,1000] (100): 
+08/04/2025 16:11:54.285   Possible choices for the spatial grid:
+08/04/2025 16:11:54.285      1. A Cartesian spatial grid
+08/04/2025 16:11:54.285      2. A tree-based spatial grid
+08/04/2025 16:11:54.285      3. A tree-based spatial grid loaded from a topology data file
+08/04/2025 16:11:54.285      4. A Voronoi tessellation-based spatial grid
+08/04/2025 16:11:54.285 ? Enter one of these numbers [1,4] (2): 4
+08/04/2025 16:12:02.265 ? Enter the start point of the box in the X direction ]-∞ pc,∞ pc[: 5e4
+08/04/2025 16:12:12.346 ? Enter the end point of the box in the X direction ]-∞ pc,∞ pc[: 5e4
+08/04/2025 16:12:13.765 ? Enter the start point of the box in the Y direction ]-∞ pc,∞ pc[: -5e4
+08/04/2025 16:12:17.149 ? Enter the end point of the box in the Y direction ]-∞ pc,∞ pc[: 5e4
+08/04/2025 16:12:18.083 ? Enter the start point of the box in the Z direction ]-∞ pc,∞ pc[: -5e4
+08/04/2025 16:12:20.158 ? Enter the end point of the box in the Z direction ]-∞ pc,∞ pc[: 5e4
+08/04/2025 16:12:22.567   Possible choices for the policy for determining the positions of the sites:
+08/04/2025 16:12:22.567      1. Random from uniform distribution
+08/04/2025 16:12:22.567      2. Random from distribution with a steep central peak
+08/04/2025 16:12:22.567      3. Random from dust density distribution
+08/04/2025 16:12:22.567      4. Random from electron density distribution
+08/04/2025 16:12:22.567      5. Random from gas density distribution
+08/04/2025 16:12:22.567      6. Loaded from text column data file
+08/04/2025 16:12:22.567      7. Positions of particles, sites or cells in imported distribution
+08/04/2025 16:12:22.567      8. Employ imported Voronoi mesh in medium system
+08/04/2025 16:12:22.567 ? Enter one of these numbers [1,8] (3): 
+08/04/2025 16:12:31.580 ? Enter the number of random sites (or cells in the grid) [5,2000000000] (500): 
+08/04/2025 16:12:32.543 ? Do you want to perform site relaxation to avoid overly elongated cells? [yes/no] (no): 
+08/04/2025 16:12:33.976   Possible choices for the instrument system:
+08/04/2025 16:12:33.976      1. An instrument system
+08/04/2025 16:12:33.976   Automatically selected the only choice: 1
+08/04/2025 16:12:33.977   Possible choices for the default instrument wavelength grid:
+08/04/2025 16:12:33.977      1. A logarithmic wavelength grid
+08/04/2025 16:12:33.977      2. A nested logarithmic wavelength grid
+08/04/2025 16:12:33.977      3. A linear wavelength grid
+08/04/2025 16:12:33.977      4. A logarithmic wavelength grid with given spectral resolution
+08/04/2025 16:12:33.977      5. A wavelength grid loaded from a text file
+08/04/2025 16:12:33.977      6. A wavelength grid configured as a list
+08/04/2025 16:12:33.977      7. A logarithmic wavelength grid with given outer borders
+08/04/2025 16:12:33.977      8. A linear wavelength grid with given outer borders
+08/04/2025 16:12:33.977      9. A logarithmic wavelength grid with given spectral resolution and outer borders
+08/04/2025 16:12:33.977     10. A wavelength grid loaded from a text file listing bin borders
+08/04/2025 16:12:33.977     11. A wavelength grid configured as a list of bin borders
+08/04/2025 16:12:33.977     12. A wavelength grid composited from a list of wavelength grids
+08/04/2025 16:12:33.977     13. A wavelength grid including a predefined list of (broad)bands
+08/04/2025 16:12:33.977     14. A wavelength grid including a configurable list of (broad)bands
+08/04/2025 16:12:33.977 ? Enter one of these numbers or zero to select none [0,14] (1): 14
+08/04/2025 16:12:45.979   Possible choices for item #1 in the (broad)bands defining this wavelength grid list:
+08/04/2025 16:12:45.979      1. A standard built-in broadband (transmission curve)
+08/04/2025 16:12:45.979      2. A wavelength band (transmission curve) loaded from a text file
+08/04/2025 16:12:45.979      3. A wavelength band (transmission curve) specified inside the configuration file
+08/04/2025 16:12:45.979 ? Enter one of these numbers [1,3] (1): 1
+08/04/2025 16:12:49.613 ? Enter the name of the standard broadband (e.g. 'Johnson V' or 'PACS 100'): EUCLID_VIS_VIS
+08/04/2025 16:13:01.270   Possible choices for item #2 in the (broad)bands defining this wavelength grid list:
+08/04/2025 16:13:01.270      1. A standard built-in broadband (transmission curve)
+08/04/2025 16:13:01.270      2. A wavelength band (transmission curve) loaded from a text file
+08/04/2025 16:13:01.270      3. A wavelength band (transmission curve) specified inside the configuration file
+08/04/2025 16:13:01.270 ? Enter one of these numbers or zero to terminate the list [0,3] (1): 
+08/04/2025 16:13:03.133 ? Enter the name of the standard broadband (e.g. 'Johnson V' or 'PACS 100'): EUCLID_NISP_Y
+08/04/2025 16:13:08.328   Possible choices for item #3 in the (broad)bands defining this wavelength grid list:
+08/04/2025 16:13:08.328      1. A standard built-in broadband (transmission curve)
+08/04/2025 16:13:08.328      2. A wavelength band (transmission curve) loaded from a text file
+08/04/2025 16:13:08.328      3. A wavelength band (transmission curve) specified inside the configuration file
+08/04/2025 16:13:08.328 ? Enter one of these numbers or zero to terminate the list [0,3] (1): 
+08/04/2025 16:13:09.353 ? Enter the name of the standard broadband (e.g. 'Johnson V' or 'PACS 100'): EUCLID_NISP_J
+08/04/2025 16:13:13.687   Possible choices for item #4 in the (broad)bands defining this wavelength grid list:
+08/04/2025 16:13:13.687      1. A standard built-in broadband (transmission curve)
+08/04/2025 16:13:13.687      2. A wavelength band (transmission curve) loaded from a text file
+08/04/2025 16:13:13.687      3. A wavelength band (transmission curve) specified inside the configuration file
+08/04/2025 16:13:13.687 ? Enter one of these numbers or zero to terminate the list [0,3] (1): 
+08/04/2025 16:13:18.888 ? Enter the name of the standard broadband (e.g. 'Johnson V' or 'PACS 100'): EUCLID_NISP_H
+08/04/2025 16:13:19.937   Possible choices for item #5 in the (broad)bands defining this wavelength grid list:
+08/04/2025 16:13:19.937      1. A standard built-in broadband (transmission curve)
+08/04/2025 16:13:19.937      2. A wavelength band (transmission curve) loaded from a text file
+08/04/2025 16:13:19.937      3. A wavelength band (transmission curve) specified inside the configuration file
+08/04/2025 16:13:19.937 ? Enter one of these numbers or zero to terminate the list [0,3] (1): 0
+08/04/2025 16:13:21.388   Possible choices for item #1 in the instruments list:
+08/04/2025 16:13:21.388      1. A distant instrument that outputs the spatially integrated flux density as an SED
+08/04/2025 16:13:21.388      2. A distant instrument that outputs the surface brightness in every pixel as a data cube
+08/04/2025 16:13:21.388      3. A distant instrument that outputs both the flux density (SED) and surface brightness (data cube)
+08/04/2025 16:13:21.388      4. An all-sky instrument (for observing inside a model)
+08/04/2025 16:13:21.388      5. A HEALPix all-sky instrument (for Planck-like observations inside a model)
+08/04/2025 16:13:21.388      6. A perspective instrument (mostly for making movies)
+08/04/2025 16:13:21.388 ? Enter one of these numbers or zero to terminate the list [0,6] (1):  
+08/04/2025 16:14:05.214 ? Enter the name for this instrument: io1
+08/04/2025 16:14:07.935   Possible choices for the wavelength grid for this instrument:
+08/04/2025 16:14:07.935      1. A logarithmic wavelength grid
+08/04/2025 16:14:07.935      2. A nested logarithmic wavelength grid
+08/04/2025 16:14:07.935      3. A linear wavelength grid
+08/04/2025 16:14:07.935      4. A logarithmic wavelength grid with given spectral resolution
+08/04/2025 16:14:07.935      5. A wavelength grid loaded from a text file
+08/04/2025 16:14:07.935      6. A wavelength grid configured as a list
+08/04/2025 16:14:07.935      7. A logarithmic wavelength grid with given outer borders
+08/04/2025 16:14:07.935      8. A linear wavelength grid with given outer borders
+08/04/2025 16:14:07.935      9. A logarithmic wavelength grid with given spectral resolution and outer borders
+08/04/2025 16:14:07.935     10. A wavelength grid loaded from a text file listing bin borders
+08/04/2025 16:14:07.935     11. A wavelength grid configured as a list of bin borders
+08/04/2025 16:14:07.935     12. A wavelength grid composited from a list of wavelength grids
+08/04/2025 16:14:07.935     13. A wavelength grid including a predefined list of (broad)bands
+08/04/2025 16:14:07.935     14. A wavelength grid including a configurable list of (broad)bands
+08/04/2025 16:14:07.935 ? Enter one of these numbers or zero to select none [0,14] (0): ^C
+(mini) cchoban@login2:~/SKIRT> skirt
+08/04/2025 16:14:11.266   Welcome to SKIRT v9.0 (git c991294 built on 23/07/2024 at 15:25:22)
+08/04/2025 16:14:11.266   Running on login2 for cchoban
+08/04/2025 16:14:11.372   Interactively constructing a simulation...
+08/04/2025 16:14:11.372 ? Enter the name of the ski file to be created: Euclid
+08/04/2025 16:14:14.145   Possible choices for a Monte Carlo simulation:
+08/04/2025 16:14:14.145      1. A Monte Carlo simulation
+08/04/2025 16:14:14.145   Automatically selected the only choice: 1
+08/04/2025 16:14:14.145   Possible choices for the user experience level:
+08/04/2025 16:14:14.145      1. Basic: for beginning users (hides many options)
+08/04/2025 16:14:14.145      2. Regular: for regular users (hides esoteric options)
+08/04/2025 16:14:14.145      3. Expert: for expert users (hides no options)
+08/04/2025 16:14:14.145 ? Enter one of these numbers [1,3] (2): 
+08/04/2025 16:14:15.935   Possible choices for the units system:
+08/04/2025 16:14:15.935      1. SI units
+08/04/2025 16:14:15.935      2. Stellar units (length in AU, distance in pc)
+08/04/2025 16:14:15.935      3. Extragalactic units (length in pc, distance in Mpc)
+08/04/2025 16:14:15.935 ? Enter one of these numbers [1,3] (3): 
+08/04/2025 16:14:17.893   Possible choices for the output style for wavelengths:
+08/04/2025 16:14:17.893      1. As photon wavelength: λ
+08/04/2025 16:14:17.893      2. As photon frequency: ν
+08/04/2025 16:14:17.893      3. As photon energy: E
+08/04/2025 16:14:17.893 ? Enter one of these numbers [1,3] (1): 
+08/04/2025 16:14:18.702   Possible choices for the output style for flux density and surface brightness:
+08/04/2025 16:14:18.702      1. Neutral: λ F_λ = ν F_ν
+08/04/2025 16:14:18.702      2. Per unit of wavelength: F_λ
+08/04/2025 16:14:18.702      3. Per unit of frequency: F_ν
+08/04/2025 16:14:18.702      4. Counts per unit of energy: F_E
+08/04/2025 16:14:18.702 ? Enter one of these numbers [1,4] (3): 1
+08/04/2025 16:14:19.590   Possible choices for the overall simulation mode:
+08/04/2025 16:14:19.590      1. No medium - oligochromatic regime (a few discrete wavelengths)
+08/04/2025 16:14:19.590      2. Extinction only - oligochromatic regime (a few discrete wavelengths)
+08/04/2025 16:14:19.590      3. No medium (primary sources only)
+08/04/2025 16:14:19.590      4. Extinction only (no secondary emission)
+08/04/2025 16:14:19.590      5. Extinction only with Lyman-alpha line transfer
+08/04/2025 16:14:19.590      6. With secondary emission from dust
+08/04/2025 16:14:19.590      7. With secondary emission from gas
+08/04/2025 16:14:19.590      8. With secondary emission from dust and gas
+08/04/2025 16:14:19.590 ? Enter one of these numbers [1,8] (4): 
+08/04/2025 16:14:22.403 ? Enter the default number of photon packets launched per simulation segment [0,1e19] (1e6): 
+08/04/2025 16:14:23.578   Possible choices for the cosmology parameters:
+08/04/2025 16:14:23.578      1. The model is at redshift zero in the Local Universe
+08/04/2025 16:14:23.578      2. The model is at a given redshift in a flat universe
+08/04/2025 16:14:23.578 ? Enter one of these numbers [1,2] (1): 
+08/04/2025 16:14:25.619   Possible choices for the source system:
+08/04/2025 16:14:25.619      1. A primary source system
+08/04/2025 16:14:25.619   Automatically selected the only choice: 1
+08/04/2025 16:14:25.623 ? Enter the shortest wavelength of photon packets launched from primary sources [1e-6 micron,1e6 micron] (0.09 micron): 
+08/04/2025 16:14:27.469 ? Enter the longest wavelength of photon packets launched from primary sources [1e-6 micron,1e6 micron] (100 micron): 
+08/04/2025 16:14:27.999   Possible choices for item #1 in the primary sources list:
+08/04/2025 16:14:27.999      1. A primary point source
+08/04/2025 16:14:27.999      2. A primary source with a built-in geometry
+08/04/2025 16:14:27.999      3. A primary source imported from smoothed particle data
+08/04/2025 16:14:27.999      4. A primary source imported from cuboidal cell data
+08/04/2025 16:14:27.999      5. A primary source imported from data represented on an adaptive mesh (AMR grid)
+08/04/2025 16:14:27.999      6. A primary source imported from data represented on a Voronoi mesh
+08/04/2025 16:14:27.999      7. A stellar surface source with an anisotropic outward radiation field
+08/04/2025 16:14:27.999      8. A cubical background source with an anisotropic inward radiation field
+08/04/2025 16:14:27.999      9. A spherical background source with an anisotropic inward radiation field
+08/04/2025 16:14:27.999     10. A primary point source with a polarized spectrum read from file
+08/04/2025 16:14:27.999 ? Enter one of these numbers or zero to terminate the list [0,10] (2): 3
+08/04/2025 16:14:32.525 ? Enter the name of the file to be imported: star.dat 
+08/04/2025 16:14:37.659   Possible choices for the kernel for interpolating the smoothed particles:
+08/04/2025 16:14:37.659      1. A cubic spline smoothing kernel
+08/04/2025 16:14:37.659      2. A scaled Gaussian smoothing kernel
+08/04/2025 16:14:37.659      3. A uniform smoothing kernel
+08/04/2025 16:14:37.659 ? Enter one of these numbers [1,3] (1): 
+08/04/2025 16:14:40.626 ? Do you want to import velocity components (3 columns)? [yes/no] (no): 
+08/04/2025 16:14:42.237   Possible choices for the SED family for assigning spectra to the imported sources:
+08/04/2025 16:14:42.237      1. A black body SED family
+08/04/2025 16:14:42.237      2. A Castelli-Kurucz SED family for stellar atmospheres
+08/04/2025 16:14:42.237      3. A Bruzual-Charlot SED family for single stellar populations
+08/04/2025 16:14:42.237      4. A Maraston SED family for single stellar populations
+08/04/2025 16:14:42.237      5. A Starburst99 SED family for single stellar populations
+08/04/2025 16:14:42.237      6. An FSPS SED family for single stellar populations
+08/04/2025 16:14:42.237      7. A BPASS SED family for single stellar populations
+08/04/2025 16:14:42.237      8. A user-provided SED family for single stellar populations
+08/04/2025 16:14:42.237      9. A user-provided, indexed SED family
+08/04/2025 16:14:42.237     10. A MAPPINGS III SED family for star-forming regions
+08/04/2025 16:14:42.237     11. A Toddlers SED family for emission from star-forming regions
+08/04/2025 16:14:42.237     12. A family of Gaussian spectra around the central spin-flip wavelength
+08/04/2025 16:14:42.237 ? Enter one of these numbers [1,12] (1): 5
+08/04/2025 16:14:51.368   Possible choices for item #2 in the primary sources list:
+08/04/2025 16:14:51.368      1. A primary point source
+08/04/2025 16:14:51.368      2. A primary source with a built-in geometry
+08/04/2025 16:14:51.368      3. A primary source imported from smoothed particle data
+08/04/2025 16:14:51.368      4. A primary source imported from cuboidal cell data
+08/04/2025 16:14:51.368      5. A primary source imported from data represented on an adaptive mesh (AMR grid)
+08/04/2025 16:14:51.368      6. A primary source imported from data represented on a Voronoi mesh
+08/04/2025 16:14:51.368      7. A stellar surface source with an anisotropic outward radiation field
+08/04/2025 16:14:51.368      8. A cubical background source with an anisotropic inward radiation field
+08/04/2025 16:14:51.368      9. A spherical background source with an anisotropic inward radiation field
+08/04/2025 16:14:51.368     10. A primary point source with a polarized spectrum read from file
+08/04/2025 16:14:51.368 ? Enter one of these numbers or zero to terminate the list [0,10] (2): 0
+08/04/2025 16:14:54.245   Possible choices for the medium system:
+08/04/2025 16:14:54.245      1. A medium system
+08/04/2025 16:14:54.245   Automatically selected the only choice: 1
+08/04/2025 16:14:54.246   Possible choices for the photon packet options:
+08/04/2025 16:14:54.246      1. A set of options related to the photon packet lifecycle
+08/04/2025 16:14:54.246   Automatically selected the only choice: 1
+08/04/2025 16:14:54.246   Possible choices for the radiation field options:
+08/04/2025 16:14:54.246      1. A set of options related to the radiation field
+08/04/2025 16:14:54.246   Automatically selected the only choice: 1
+08/04/2025 16:14:54.247   Possible choices for item #1 in the transfer media list:
+08/04/2025 16:14:54.247      1. A transfer medium with a built-in geometry
+08/04/2025 16:14:54.247      2. A transfer medium imported from smoothed particle data
+08/04/2025 16:14:54.247      3. A transfer medium imported from cuboidal cell data
+08/04/2025 16:14:54.247      4. A transfer medium imported from data represented on an adaptive mesh (AMR grid)
+08/04/2025 16:14:54.247      5. A transfer medium imported from data represented on a Voronoi mesh
+08/04/2025 16:14:54.247 ? Enter one of these numbers [1,5] (1): 2
+08/04/2025 16:14:58.368 ? Enter the name of the file to be imported: gas.dat
+08/04/2025 16:15:00.123   Possible choices for the kernel for interpolating the smoothed particles:
+08/04/2025 16:15:00.123      1. A cubic spline smoothing kernel
+08/04/2025 16:15:00.123      2. A scaled Gaussian smoothing kernel
+08/04/2025 16:15:00.123      3. A uniform smoothing kernel
+08/04/2025 16:15:00.123 ? Enter one of these numbers [1,3] (1): 
+08/04/2025 16:15:01.587   Possible choices for the type of mass quantity to be imported:
+08/04/2025 16:15:01.587      1. Mass (volume-integrated)
+08/04/2025 16:15:01.587      2. Number (volume-integrated)
+08/04/2025 16:15:01.587 ? Enter one of these numbers [1,2] (1): 
+08/04/2025 16:15:02.834 ? Enter the fraction of the mass to be included (or one to include all) [0,1] (1): 0.4
+08/04/2025 16:15:07.056 ? Do you want to import a metallicity column? [yes/no] (no): yes
+08/04/2025 16:15:09.200 ? Do you want to import a temperature column? [yes/no] (no): yes
+08/04/2025 16:15:10.798 ? Enter the maximum temperature for included mass (or zero to include all) [0 K,1e6 K] (0 K): 1e6
+08/04/2025 16:15:12.706 ? Do you want to import velocity components (3 columns)? [yes/no] (no): 
+08/04/2025 16:15:14.388 ? Do you want to import parameter(s) to select a spatially varying material mix? [yes/no] (no): 
+08/04/2025 16:15:15.997   Possible choices for the material type and properties throughout the medium:
+08/04/2025 16:15:15.997      1. A typical interstellar dust mix (mean properties)
+08/04/2025 16:15:15.997      2. A TRUST benchmark dust mix (mean properties, optionally with polarization)
+08/04/2025 16:15:15.997      3. A Pinte 2D benchmark dust mix (mean properties, optionally with polarization at 1 micron)
+08/04/2025 16:15:15.997      4. A Pascucci 2D benchmark dust mix (mean properties)
+08/04/2025 16:15:15.997      5. An Ivezic 1D benchmark dust mix (mean properties)
+08/04/2025 16:15:15.997      6. A dust mix with mean properties loaded from a text file
+08/04/2025 16:15:15.997      7. A dust mix with mean properties specified inside the configuration file
+08/04/2025 16:15:15.997      8. A THEMIS (Jones et al. 2017) dust mix
+08/04/2025 16:15:15.997      9. A Draine and Li (2007) dust mix
+08/04/2025 16:15:15.997     10. A Zubko et al. (2004) dust mix
+08/04/2025 16:15:15.997     11. A Weingartner and Draine (2001) dust mix
+08/04/2025 16:15:15.997     12. An MRN (1997) dust mix
+08/04/2025 16:15:15.997     13. A TRUST benchmark dust mix
+08/04/2025 16:15:15.997     14. A configurable dust mix with one or more grain populations
+08/04/2025 16:15:15.997     15. A dust mix decorator that manages separate densities for fragments of another dust mix
+08/04/2025 16:15:15.997     16. A population of electrons
+08/04/2025 16:15:15.997     17. A gas mix supporting the spin-flip 21 cm hydrogen absorption
+08/04/2025 16:15:15.997     18. A gas mix supporting the spin-flip 21 cm hydrogen transition
+08/04/2025 16:15:15.997     19. A gas mix supporting photo-absorption and fluorescence for X-ray wavelengths
+08/04/2025 16:15:15.997     20. A gas mix supporting rotational transitions in specific molecules and atoms
+08/04/2025 16:15:15.997 ? Enter one of these numbers [1,20] (1): 11
+08/04/2025 16:15:19.841   Possible choices for the environment determining the dust model:
+08/04/2025 16:15:19.841      1. The Milky Way
+08/04/2025 16:15:19.841      2. The Large Magellanic Cloud
+08/04/2025 16:15:19.841      3. The Small Magellanic Cloud
+08/04/2025 16:15:19.841 ? Enter one of these numbers [1,3] (1): 1
+08/04/2025 16:15:20.638 ? Enter the number of silicate grain size bins [1,2000000000] (5): 
+08/04/2025 16:15:21.996 ? Enter the number of graphite grain size bins [1,2000000000] (5): 
+08/04/2025 16:15:22.471 ? Enter the number of neutral and ionized PAH size bins (each) [1,2000000000] (5): 
+08/04/2025 16:15:23.127   Possible choices for item #2 in the transfer media list:
+08/04/2025 16:15:23.127      1. A transfer medium with a built-in geometry
+08/04/2025 16:15:23.127      2. A transfer medium imported from smoothed particle data
+08/04/2025 16:15:23.127      3. A transfer medium imported from cuboidal cell data
+08/04/2025 16:15:23.127      4. A transfer medium imported from data represented on an adaptive mesh (AMR grid)
+08/04/2025 16:15:23.127      5. A transfer medium imported from data represented on a Voronoi mesh
+08/04/2025 16:15:23.127 ? Enter one of these numbers or zero to terminate the list [0,5] (1): 0
+08/04/2025 16:15:27.938   Possible choices for the spatial grid sampling options:
+08/04/2025 16:15:27.938      1. A set of options related to media sampling for the spatial grid
+08/04/2025 16:15:27.938   Automatically selected the only choice: 1
+08/04/2025 16:15:27.938 ? Enter the number of random density samples for determining spatial cell mass [1,1000] (100): 
+08/04/2025 16:15:31.865   Possible choices for the spatial grid:
+08/04/2025 16:15:31.865      1. A Cartesian spatial grid
+08/04/2025 16:15:31.865      2. A tree-based spatial grid
+08/04/2025 16:15:31.865      3. A tree-based spatial grid loaded from a topology data file
+08/04/2025 16:15:31.865      4. A Voronoi tessellation-based spatial grid
+08/04/2025 16:15:31.865 ? Enter one of these numbers [1,4] (2): 4
+08/04/2025 16:15:34.087 ? Enter the start point of the box in the X direction ]-∞ pc,∞ pc[: -5e4
+08/04/2025 16:15:38.407 ? Enter the end point of the box in the X direction ]-∞ pc,∞ pc[: 5e4
+08/04/2025 16:15:40.096 ? Enter the start point of the box in the Y direction ]-∞ pc,∞ pc[: -5e4
+08/04/2025 16:15:41.833 ? Enter the end point of the box in the Y direction ]-∞ pc,∞ pc[: 5e4
+08/04/2025 16:15:43.325 ? Enter the start point of the box in the Z direction ]-∞ pc,∞ pc[: -5e4
+08/04/2025 16:15:44.532 ? Enter the end point of the box in the Z direction ]-∞ pc,∞ pc[: 5e4
+08/04/2025 16:15:46.090   Possible choices for the policy for determining the positions of the sites:
+08/04/2025 16:15:46.090      1. Random from uniform distribution
+08/04/2025 16:15:46.090      2. Random from distribution with a steep central peak
+08/04/2025 16:15:46.090      3. Random from dust density distribution
+08/04/2025 16:15:46.090      4. Random from electron density distribution
+08/04/2025 16:15:46.090      5. Random from gas density distribution
+08/04/2025 16:15:46.090      6. Loaded from text column data file
+08/04/2025 16:15:46.090      7. Positions of particles, sites or cells in imported distribution
+08/04/2025 16:15:46.090      8. Employ imported Voronoi mesh in medium system
+08/04/2025 16:15:46.090 ? Enter one of these numbers [1,8] (3): 
+08/04/2025 16:15:48.856 ? Enter the number of random sites (or cells in the grid) [5,2000000000] (500): 
+08/04/2025 16:15:50.455 ? Do you want to perform site relaxation to avoid overly elongated cells? [yes/no] (no): 
+08/04/2025 16:16:06.555   Possible choices for the instrument system:
+08/04/2025 16:16:06.555      1. An instrument system
+08/04/2025 16:16:06.555   Automatically selected the only choice: 1
+08/04/2025 16:16:06.556   Possible choices for the default instrument wavelength grid:
+08/04/2025 16:16:06.556      1. A logarithmic wavelength grid
+08/04/2025 16:16:06.556      2. A nested logarithmic wavelength grid
+08/04/2025 16:16:06.556      3. A linear wavelength grid
+08/04/2025 16:16:06.556      4. A logarithmic wavelength grid with given spectral resolution
+08/04/2025 16:16:06.556      5. A wavelength grid loaded from a text file
+08/04/2025 16:16:06.556      6. A wavelength grid configured as a list
+08/04/2025 16:16:06.556      7. A logarithmic wavelength grid with given outer borders
+08/04/2025 16:16:06.556      8. A linear wavelength grid with given outer borders
+08/04/2025 16:16:06.556      9. A logarithmic wavelength grid with given spectral resolution and outer borders
+08/04/2025 16:16:06.556     10. A wavelength grid loaded from a text file listing bin borders
+08/04/2025 16:16:06.556     11. A wavelength grid configured as a list of bin borders
+08/04/2025 16:16:06.556     12. A wavelength grid composited from a list of wavelength grids
+08/04/2025 16:16:06.556     13. A wavelength grid including a predefined list of (broad)bands
+08/04/2025 16:16:06.556     14. A wavelength grid including a configurable list of (broad)bands
+08/04/2025 16:16:06.556 ? Enter one of these numbers or zero to select none [0,14] (1): 
+08/04/2025 16:16:14.856 ? Enter the shortest wavelength [1e-6 micron,1e6 micron]: 0.09
+08/04/2025 16:16:19.666 ? Enter the longest wavelength [1e-6 micron,1e6 micron]: 100
+08/04/2025 16:16:20.832 ? Enter the number of wavelength grid points [2,2000000000] (25): 
+08/04/2025 16:16:22.081   Possible choices for item #1 in the instruments list:
+08/04/2025 16:16:22.081      1. A distant instrument that outputs the spatially integrated flux density as an SED
+08/04/2025 16:16:22.081      2. A distant instrument that outputs the surface brightness in every pixel as a data cube
+08/04/2025 16:16:22.081      3. A distant instrument that outputs both the flux density (SED) and surface brightness (data cube)
+08/04/2025 16:16:22.081      4. An all-sky instrument (for observing inside a model)
+08/04/2025 16:16:22.081      5. A HEALPix all-sky instrument (for Planck-like observations inside a model)
+08/04/2025 16:16:22.081      6. A perspective instrument (mostly for making movies)
+08/04/2025 16:16:22.081 ? Enter one of these numbers or zero to terminate the list [0,6] (1): 3
+08/04/2025 16:16:37.868 ? Enter the name for this instrument: Euclid
+08/04/2025 16:16:47.884   Possible choices for the wavelength grid for this instrument:
+08/04/2025 16:16:47.884      1. A logarithmic wavelength grid
+08/04/2025 16:16:47.884      2. A nested logarithmic wavelength grid
+08/04/2025 16:16:47.884      3. A linear wavelength grid
+08/04/2025 16:16:47.884      4. A logarithmic wavelength grid with given spectral resolution
+08/04/2025 16:16:47.884      5. A wavelength grid loaded from a text file
+08/04/2025 16:16:47.884      6. A wavelength grid configured as a list
+08/04/2025 16:16:47.884      7. A logarithmic wavelength grid with given outer borders
+08/04/2025 16:16:47.884      8. A linear wavelength grid with given outer borders
+08/04/2025 16:16:47.884      9. A logarithmic wavelength grid with given spectral resolution and outer borders
+08/04/2025 16:16:47.884     10. A wavelength grid loaded from a text file listing bin borders
+08/04/2025 16:16:47.884     11. A wavelength grid configured as a list of bin borders
+08/04/2025 16:16:47.884     12. A wavelength grid composited from a list of wavelength grids
+08/04/2025 16:16:47.884     13. A wavelength grid including a predefined list of (broad)bands
+08/04/2025 16:16:47.884     14. A wavelength grid including a configurable list of (broad)bands
+08/04/2025 16:16:47.884 ? Enter one of these numbers or zero to select none [0,14] (0): 14
+08/04/2025 16:16:57.239   Possible choices for item #1 in the (broad)bands defining this wavelength grid list:
+08/04/2025 16:16:57.239      1. A standard built-in broadband (transmission curve)
+08/04/2025 16:16:57.239      2. A wavelength band (transmission curve) loaded from a text file
+08/04/2025 16:16:57.239      3. A wavelength band (transmission curve) specified inside the configuration file
+08/04/2025 16:16:57.239 ? Enter one of these numbers [1,3] (1): 
+08/04/2025 16:16:59.010 ? Enter the name of the standard broadband (e.g. 'Johnson V' or 'PACS 100'): EUCLID_VIS_VIS
+08/04/2025 16:17:17.266   Possible choices for item #2 in the (broad)bands defining this wavelength grid list:
+08/04/2025 16:17:17.266      1. A standard built-in broadband (transmission curve)
+08/04/2025 16:17:17.266      2. A wavelength band (transmission curve) loaded from a text file
+08/04/2025 16:17:17.266      3. A wavelength band (transmission curve) specified inside the configuration file
+08/04/2025 16:17:17.266 ? Enter one of these numbers or zero to terminate the list [0,3] (1): 
+08/04/2025 16:17:18.590 ? Enter the name of the standard broadband (e.g. 'Johnson V' or 'PACS 100'): EUCLID_NISP_Y
+08/04/2025 16:17:23.313   Possible choices for item #3 in the (broad)bands defining this wavelength grid list:
+08/04/2025 16:17:23.313      1. A standard built-in broadband (transmission curve)
+08/04/2025 16:17:23.313      2. A wavelength band (transmission curve) loaded from a text file
+08/04/2025 16:17:23.313      3. A wavelength band (transmission curve) specified inside the configuration file
+08/04/2025 16:17:23.313 ? Enter one of these numbers or zero to terminate the list [0,3] (1): 
+08/04/2025 16:17:24.073 ? Enter the name of the standard broadband (e.g. 'Johnson V' or 'PACS 100'): EUCLID_NISP_J
+08/04/2025 16:17:28.046   Possible choices for item #4 in the (broad)bands defining this wavelength grid list:
+08/04/2025 16:17:28.046      1. A standard built-in broadband (transmission curve)
+08/04/2025 16:17:28.046      2. A wavelength band (transmission curve) loaded from a text file
+08/04/2025 16:17:28.046      3. A wavelength band (transmission curve) specified inside the configuration file
+08/04/2025 16:17:28.046 ? Enter one of these numbers or zero to terminate the list [0,3] (1): 
+08/04/2025 16:17:29.065 ? Enter the name of the standard broadband (e.g. 'Johnson V' or 'PACS 100'): EUCLID_NISP_H
+08/04/2025 16:17:33.596   Possible choices for item #5 in the (broad)bands defining this wavelength grid list:
+08/04/2025 16:17:33.596      1. A standard built-in broadband (transmission curve)
+08/04/2025 16:17:33.596      2. A wavelength band (transmission curve) loaded from a text file
+08/04/2025 16:17:33.596      3. A wavelength band (transmission curve) specified inside the configuration file
+08/04/2025 16:17:33.596 ? Enter one of these numbers or zero to terminate the list [0,3] (1): 0
+08/04/2025 16:17:35.298 ? Enter the distance to the system [0 Mpc,∞ Mpc[: 10
+08/04/2025 16:17:37.459 ? Enter the inclination angle θ of the detector [0 deg,180 deg] (0 deg): 
+08/04/2025 16:17:38.607 ? Enter the azimuth angle φ of the detector [-360 deg,360 deg] (0 deg): 
+08/04/2025 16:17:39.098 ? Enter the roll angle ω of the detector [-360 deg,360 deg] (0 deg): 
+08/04/2025 16:17:40.026 ? Enter the total field of view in the horizontal direction ]0 pc,∞ pc[: 4e4
+08/04/2025 16:17:44.070 ? Enter the number of pixels in the horizontal direction [1,10000] (250): 500
+08/04/2025 16:17:52.218 ? Enter the center of the frame in the horizontal direction ]-∞ pc,∞ pc[ (0 pc): 0
+08/04/2025 16:17:59.256 ? Enter the total field of view in the vertical direction ]0 pc,∞ pc[: 4e4
+08/04/2025 16:18:00.499 ? Enter the number of pixels in the vertical direction [1,10000] (250): 500
+08/04/2025 16:18:05.738 ? Enter the center of the frame in the vertical direction ]-∞ pc,∞ pc[ (0 pc): 0
+08/04/2025 16:18:06.768 ? Do you want to record flux components separately? [yes/no] (no): 
+08/04/2025 16:18:08.306 ? Do you want to record polarization (Stokes vector elements)? [yes/no] (no): 
+08/04/2025 16:18:09.269 ? Do you want to record information for calculating statistical properties? [yes/no] (no): 
+08/04/2025 16:18:10.961   Possible choices for item #2 in the instruments list:
+08/04/2025 16:18:10.961      1. A distant instrument that outputs the spatially integrated flux density as an SED
+08/04/2025 16:18:10.961      2. A distant instrument that outputs the surface brightness in every pixel as a data cube
+08/04/2025 16:18:10.961      3. A distant instrument that outputs both the flux density (SED) and surface brightness (data cube)
+08/04/2025 16:18:10.961      4. An all-sky instrument (for observing inside a model)
+08/04/2025 16:18:10.961      5. A HEALPix all-sky instrument (for Planck-like observations inside a model)
+08/04/2025 16:18:10.961      6. A perspective instrument (mostly for making movies)
+08/04/2025 16:18:10.961 ? Enter one of these numbers or zero to terminate the list [0,6] (1): 0
+08/04/2025 16:18:12.652   Possible choices for the probe system:
+08/04/2025 16:18:12.652      1. A probe system
+08/04/2025 16:18:12.652   Automatically selected the only choice: 1
+08/04/2025 16:18:12.653   Possible choices for item #1 in the probes list:
+08/04/2025 16:18:12.653      1. Convergence: information on the spatial grid
+08/04/2025 16:18:12.653      2. Convergence: cuts of the medium density along the coordinate planes
+08/04/2025 16:18:12.653      3. Source: luminosities of primary sources
+08/04/2025 16:18:12.653      4. Source: number of photon packets launched from primary and secondary sources
+08/04/2025 16:18:12.653      5. Internal spatial grid: density of the medium
+08/04/2025 16:18:12.653      6. Internal spatial grid: opacity of the medium
+08/04/2025 16:18:12.653      7. Properties: basic info for each spatial cell
+08/04/2025 16:18:12.653      8. Properties: data files for plotting the structure of the grid
+08/04/2025 16:18:12.653      9. Properties: aggregate optical material properties for each medium
+08/04/2025 16:18:12.653     10. Properties: dust grain population mass and size information
+08/04/2025 16:18:12.653     11. Properties: dust grain size distribution
+08/04/2025 16:18:12.653     12. Wavelength grid: instruments
+08/04/2025 16:18:12.653     13. Imported source: specific luminosity density
+08/04/2025 16:18:12.653     14. Imported source: mass density
+08/04/2025 16:18:12.653     15. Imported source: metallicity
+08/04/2025 16:18:12.653     16. Imported source: age
+08/04/2025 16:18:12.653     17. Imported medium: mass or number density
+08/04/2025 16:18:12.653     18. Imported medium: metallicity
+08/04/2025 16:18:12.653     19. Imported medium: temperature
+08/04/2025 16:18:12.653 ? Enter one of these numbers or zero to terminate the list [0,19] (1): 0
+08/04/2025 16:18:15.527   Successfully created ski file 'Euclid.ski'.
+08/04/2025 16:18:15.527   To run the simulation use the command: skirt Euclid
+

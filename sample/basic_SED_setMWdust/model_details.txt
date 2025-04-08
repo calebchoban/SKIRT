@@ -1,0 +1,7 @@
+Below are a few basic details for the basic_SED_MWdust.ski file.
+
+Redshift z=0.
+Octotree spatial grid.
+3 SED+photometric instruments pointed face-on, edge-on, and 45 degrees between the two.
+Spatial dust temperature probe.
+Assumes Weingartner and Draine MW dust population.
