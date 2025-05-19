@@ -13,7 +13,7 @@
         <sourceSystem type="SourceSystem">
             <SourceSystem minWavelength="{minWavelengthSource} micron" maxWavelength="{maxWavelengthSource} micron" wavelengths="0.55 micron" sourceBias="0.5">
                 <sources type="Source">
-                    <ParticleSource filename="stars.dat" importVelocity="false" importVelocityDispersion="false" importCurrentMass="true" useColumns="" sourceWeight="1" wavelengthBias="0.5">
+                    <ParticleSource filename="stars.dat" importVelocity="false" importVelocityDispersion="false" importCurrentMass="false" useColumns="" sourceWeight="1" wavelengthBias="0.5">
                         <smoothingKernel type="SmoothingKernel">
                             <CubicSplineSmoothingKernel/>
                         </smoothingKernel>
@@ -218,11 +218,6 @@
                             <PlanarCutsForm minX="{minX} pc" maxX="{maxX} pc" minY="{minY} pc" maxY="{maxY} pc" minZ="{minZ} pc" maxZ="{maxZ} pc" positionX="0 pc" positionY="0 pc" positionZ="0 pc" numPixelsX="{numPixelsX}" numPixelsY="{numPixelsY}" numPixelsZ="{numPixelsZ}"/>
                         </form>
                     </ImportedSourceMetallicityProbe>
-                    <ImportedSourceAgeProbe probeName="imp_source_age" weight="CurrentMass" wavelength="0.55 micron">
-                        <form type="GenericForm">
-                            <PlanarCutsForm minX="{minX} pc" maxX="{maxX} pc" minY="{minY} pc" maxY="{maxY} pc" minZ="{minZ} pc" maxZ="{maxZ} pc" positionX="0 pc" positionY="0 pc" positionZ="0 pc" numPixelsX="{numPixelsX}" numPixelsY="{numPixelsY}" numPixelsZ="{numPixelsZ}"/>
-                        </form>
-                    </ImportedSourceAgeProbe>
                     <ImportedMediumDensityProbe probeName="imp_medium_den">
                         <form type="GenericForm">
                             <PlanarCutsForm minX="{minX} pc" maxX="{maxX} pc" minY="{minY} pc" maxY="{maxY} pc" minZ="{minZ} pc" maxZ="{maxZ} pc" positionX="0 pc" positionY="0 pc" positionZ="0 pc" numPixelsX="{numPixelsX}" numPixelsY="{numPixelsY}" numPixelsZ="{numPixelsZ}"/>
