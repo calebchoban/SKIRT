@@ -6,15 +6,16 @@
 #SBATCH --nodes=1           # Total # of nodes 
 #SBATCH --ntasks-per-node=4 # Total number of mpi tasks per node
 #SBATCH --cpus-per-task=8   # number of cpus per mpi task = OMP_NUM_THREADS.
-#SBATCH --mem=50G           # Total RAM to be used by this job
+#SBATCH --mem=220G           # Total RAM to be used by this job
 #SBATCH -t 01:00:00         # Run time (hh:mm:ss)
 #SBATCH --mail-type=all     # Send email at begin and end of job
 #SBATCH -A r00380           # Project/Allocation name
 #SBATCH --mail-user=EMAIL   # Email to send all jobs alters to
 #SBATCH -D .
 
-# Note that there are a total of 128 cores per node so (ntasks-per-node) * (cpus-per-task) should always be less than or equal to 128.
-# Also the max RAM is 256 GB.
+# This is an example SLURM job scripts to run SKIRT on Big Red 200 at IU.
+# There is a total of 128 cores per node so (ntasks-per-node) * (cpus-per-task) should always be less than or equal to 128.
+# Max RAM is 256 GB.
 
 export OMP_NUM_THREADS=4
 date
@@ -22,9 +23,9 @@ module list
 
 # Make a new folder for the output and copy all the files SKIRT uses into it
 mkdir output
-cp out.ski ./output/
-cp star.dat ./output/
-cp gas.dat ./output/
+cp run.ski ./output/
+cp stars.dat ./output/
+cp dust.dat ./output/
 cd output
 pwd
 
