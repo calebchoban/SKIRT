@@ -25,7 +25,7 @@ skirt
 ```
 This should output
 ```console
-(mini) cchoban@login1:~/SKIRT/git> skirt
+(mini) cchoban@login1:~/SKIRT/git> ./release/SKIRT/main/skirt
 17/05/2024 15:48:07.264   Welcome to SKIRT v9.0 (git 3c9e4d7 built on 17/05/2024 at 15:20:47)
 17/05/2024 15:48:07.264   Running on login1 for cchoban
 17/05/2024 15:48:07.405   Interactively constructing a simulation...
