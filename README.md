@@ -21,7 +21,7 @@ make purge
 
 To confirm the installation is successful run
 ```console
-skirt
+./release/SKIRT/main/skirt
 ```
 This should output
 ```console
@@ -119,6 +119,7 @@ Note that some PTS functionality uses Python packages you may not have installed
 
 Here is a list of general tips we have encountered
 
-* When creating mock images to compare to surveys or observations, tests/debugging are best done with high instrument resolution. Once you want to compare with your observational survey, set the instrument resolution to the resolution of the survey to avoid having to down-sample the outputs later on.
-* The higher the resolution of your instrument, the larger the photon packet required for convergence. To check convergence of photometric images follow the [SKIRT guidelines](https://skirt.ugent.be/root/_user_statistics.html). Convergence will also vary with wavelength.
-* During photometric image testing, we have found using the Voronoi tesselation medium grid instead of the postprocessed octotree is ideal. It both greatly shortens the run times and converges well.
+* Test/Debugging: When creating mock images to compare to surveys or observations, tests/debugging are best done with high instrument resolution. Once you want to compare with your observational survey, set the instrument resolution to the resolution of the survey to avoid having to down-sample the outputs later on.
+* Convergence: The higher the resolution of your instrument, the larger the photon packet required for convergence and the higher the resolution needed for the octotree grid. To check convergence of photometric images follow the [SKIRT guidelines](https://skirt.ugent.be/root/_user_statistics.html). Convergence will also vary with wavelength.
+* Octotree vs Voronoi: During photometric image testing, we have found using the postprocessed octotree is best for high spatial resolution images. If your problem does not require high spatial resolution the Voronoi tesselation medium grid may be better since it both greatly shortens the run times and converges well.
+* Medium Spatial Extent: Note that when defining the extent of the spatial domain in SKIRT, only gas/dust medium data inside the domain will be included BUT all star data will be included. For example, if you give the entire snapshot star and dust/gas data, but define the SKIRT domain to a small 1 kpc box, only gas/dust data in the box will be used for the radiative transfer BUT all of the star particle data will be used for primary emission! Best practice is to only extract star and dust/gas particle data from the domain you want to run SKIRT for.
