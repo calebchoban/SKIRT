@@ -51,17 +51,17 @@ skirt
 ```
 This will step you through creating a .ski file with user specified properties. Tutorials can be found [here](https://skirt.ugent.be/version9/_tutorials.html). Fair warning, this Q&A process can be long.
 
-A few template SKIRT builds for FIRE snapshots are provided in the **/ntbk** folder. 
+A few template SKIRT builds for FIRE snapshots are provided in the **/intro_ntbk** folder. 
 
 You can edit .ski files directly if you know what you are doing. If you have minor changes to make this is faster than using the Q&A process. Tutorials can be found [here](https://skirt.ugent.be/version9/_tutorial_custom_dust.html).
 
 # Reducing FIRE Snapshot Data
 
-To prepare the data from FIRE snaps to be used by SKIRT, use the `data_reduction.ipynb` Jupyter notebook in the **/ntbk** \ directory. Note this script uses functions from my [crc_scripts](https://github.com/calebchoban/crc_scripts/) repository, so you will need to install that first.
+To prepare the data from FIRE snaps to be used by SKIRT, use the `data_reduction.ipynb` Jupyter notebook in the **/intro_ntbk** \ directory. Note this script uses functions from my [crc_scripts](https://github.com/calebchoban/crc_scripts/) repository, so you will need to install that first.
 
 # Creating SKIRT Parameter Files
 
-To create SKIRT parameter files from a template, use the `set_input_params.ipynb` Jupyter notebook in the **/ntbk**  directory. 
+To create SKIRT parameter files from a template, use the `set_input_params.ipynb` Jupyter notebook in the **/intro_ntbk**  directory. 
 
 # Running SKIRT on a Supercomputer
 
