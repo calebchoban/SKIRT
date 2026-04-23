@@ -14,7 +14,7 @@ $(SKIRT_GIT_DIR):
 
 .PHONY: purge
 purge:
-	rm -r git/ release/ resources/ PTS/ run/
+	rm -r git/ release/ resources/ run/ PTS/
 
 .PHONY: pts
 pts:

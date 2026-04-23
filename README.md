@@ -57,7 +57,7 @@ You can edit .ski files directly if you know what you are doing. If you have min
 
 # Reducing FIRE Snapshot Data
 
-To prepare the data from FIRE snaps to be used by SKIRT, use the `data_reduction.ipynb` Jupyter notebook in the **/intro_ntbk** \ directory. Note this script uses functions from my [crc_scripts](https://github.com/calebchoban/crc_scripts/) repository, so you will need to install that first.
+To prepare the data from FIRE snaps to be used by SKIRT, use the `data_reduction.ipynb` Jupyter notebook in the **/intro_ntbk** directory. Note this script uses functions from my [crc_scripts](https://github.com/calebchoban/crc_scripts/) repository, so you will need to install that first.
 
 # Creating SKIRT Parameter Files
 
@@ -83,7 +83,7 @@ Note that for the default setup provided this should take ~15 minutes to run for
 
 # Creating Broadband Images From SKIRT Outputs
 
-Use the `mock_image.ipynb` Juypter notebook to create mock broadband and 3-color images from the outputs.
+Use the `mock_image.ipynb` Juypter notebook to create mock broadband and 3-color images from the outputs. Note this requires the [crc_scripts](https://github.com/calebchoban/crc_scripts/) and [SKIRT_utils](https://github.com/calebchoban/SKIRT_utils/) repositories.
 
 
 # SKIRT Python Analysis Tools
@@ -121,5 +121,5 @@ Here is a list of general tips we have encountered
 
 * Test/Debugging: When creating mock images to compare to surveys or observations, tests/debugging are best done with high instrument resolution. Once you want to compare with your observational survey, set the instrument resolution to the resolution of the survey to avoid having to down-sample the outputs later on.
 * Convergence: The higher the resolution of your instrument, the larger the photon packet required for convergence and the higher the resolution needed for the octotree grid. To check convergence of photometric images follow the [SKIRT guidelines](https://skirt.ugent.be/root/_user_statistics.html). Convergence will also vary with wavelength.
-* Octotree vs Voronoi: During photometric image testing, we have found using the postprocessed octotree is best for high spatial resolution images. If your problem does not require high spatial resolution the Voronoi tesselation medium grid may be better since it both greatly shortens the run times and converges well.
+* Octotree vs Voronoi: During photometric image testing, we have found using the postprocessed octtree is best for high spatial resolution images. If your problem does not require high spatial resolution the Voronoi tesselation medium grid may be better since it both greatly shortens the run times and converges well.
 * Medium Spatial Extent: Note that when defining the extent of the spatial domain in SKIRT, only gas/dust medium data inside the domain will be included BUT all star data will be included. For example, if you give the entire snapshot star and dust/gas data, but define the SKIRT domain to a small 1 kpc box, only gas/dust data in the box will be used for the radiative transfer BUT all of the star particle data will be used for primary emission! Best practice is to only extract star and dust/gas particle data from the domain you want to run SKIRT for.
